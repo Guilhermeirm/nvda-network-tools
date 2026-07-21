@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Network Tools for NVDA V1.0.0</title></head>
+<body>
+<h1>Network Tools for NVDA V1.0.0</h1>
+<p>Network Tools is an NVDA add-on that provides accessible network diagnostics for blind or low-vision IT technicians and network administrators on Windows.</p>
+<p>Shortcut: NVDA+Shift+R opens the main menu from any application. NVDA+Shift+C announces the current connection status (requires Connection Monitor to be active).</p>
+<p>Use the arrow keys to navigate, Enter to activate an item, and Escape to close the current screen or return to the previous menu.</p>
+<p>Short error or warning messages (for example, "no DNS found" or "the selected interface has no IP configured") are only announced by NVDA, without opening any screen. In these cases, the menu does not reopen automatically; to keep using the add-on, trigger the shortcut again (NVDA+Shift+R).</p>
+
+<h2>Menu structure</h2>
+<p>Just above the list of actions, the main menu presents a row of tabs called <strong>Network Interface</strong>, with "Automatic" as the first option, followed by one tab per adapter detected on the machine. From the list of actions, press Shift+Tab once to reach it. Use Ctrl+Tab, Ctrl+Shift+Tab, or the arrow keys to switch between tabs; the change takes effect immediately, with no confirmation required. "Automatic" preserves the default behavior (the add-on detects on its own which interface is actually in use); selecting a specific tab makes that adapter the one always used. This choice is saved in NVDA's configuration and applies to every function that depends on a specific interface: IP Status, DNS, IPv6, Set Static IP, and Revert to Dynamic IP. It also applies to Wi-Fi, provided the selected tab corresponds to one of the machine's Wi-Fi adapters. If the selected adapter is removed (for example, a USB adapter being unplugged), the add-on automatically reverts to "Automatic". Hidden Windows adapters (internal VPN devices such as WAN Miniport, always named with an asterisk at the end, e.g. "Local Area Connection* 2") do not appear in the tabs, since they are never useful to select manually.</p>
+<p>After that item, the main menu offers: IP and Gateway Status, DNS (submenu), IPv6 (submenu), Wi-Fi Information and Password, Discover Public IP, Locate External IP, Smart Ping, Route Tracing, Device Scan (submenu), Internet Speed Test, Set Static IP (Admin), Revert to Dynamic IP (Admin), DNS Repair and Cleanup (submenu), Firewall (submenu), Connection Monitor (submenu), and Advanced Adapter Diagnostics (PowerShell).</p>
+
+<h2>Functions</h2>
+
+<h3>IP and Gateway Status</h3>
+<p>Displays the computer name, interface, IPv4 address, subnet mask, gateway, IP mode (dynamic or static), MAC address, IPv6 address, and the speed of the active network adapter. When Network Interface is set to automatic and the machine has more than one adapter with a valid IP at the same time (for example, Ethernet and Wi-Fi active together), the screen presents one tab per adapter instead of picking just one; navigate between them with Ctrl+Tab. With a manually selected interface, only that interface is shown.</p>
+
+<h3>DNS (submenu)</h3>
+<p><strong>View Current DNS Servers</strong>: lists the DNS servers currently in use, with response latency measured directly against each server and, when possible, the identified provider (for example, Google Public DNS, Cloudflare, Quad9, OpenDNS, or the local internet provider).</p>
+<p><strong>Find Best DNS</strong>: tests, in parallel, the DNS servers from the manageable list (see "Manage DNS Servers" below) and suggests the fastest and most stable one among them, always compared against the DNS currently in use. The search takes place in two stages: first, a quick query to every server on the list, to discard those that do not respond; then, only the top-ranked servers (plus the current DNS, which is always included) receive several consecutive queries, measuring jitter and packet loss in addition to average latency. This makes it possible to notice when a server is fast but unstable, not just which one is fastest in a single query. The number of queries per server, the timeout, and the number of servers that advance to this second stage are configurable under Preferences &gt; Settings &gt; Network Tools. If the result differs from the current DNS, the add-on offers to switch, automatically setting the runner-up as the secondary server to preserve redundancy.</p>
+<p><strong>Apply Custom DNS (Admin)</strong>: tests the given server before actually applying the configuration. If the traditional port 53 is blocked by the router or provider, the add-on offers a Secure Mode that uses DNS over HTTPS (DoH) to work around the block, when the chosen server is a public provider with documented support for encrypted DNS.</p>
+<p><strong>Manage DNS Servers</strong>: presents a text box with every server tested by Find Best DNS — the ones included by default (known public providers) and any others added by the user. Any entry can be freely edited, added, or removed (one IPv4 address per line), including the default ones, without requiring an add-on update.</p>
+<p><strong>Test a DNS Server</strong>: tests a single, on-the-spot DNS server without affecting the manageable list or the system configuration. This is a standalone diagnostic that reports average, minimum, and maximum latency, jitter, and packet loss. The query is sent directly to the server as a real DNS request (not an ICMP ping). The number of queries and the timeout are configured separately from the values used by Find Best DNS.</p>
+
+<h3>IPv6 (submenu)</h3>
+<p>Windows reports the configured IPv6 address but does not indicate whether it is actually working. This submenu exists to answer that question, through three independent tests:</p>
+<p><strong>IPv6 Connectivity Test</strong>: checks whether this machine's IPv6 actually reaches the internet, by attempting a direct connection to known public servers.</p>
+<p><strong>IPv6 DNS Test</strong>: checks whether DNS resolves IPv6 addresses (AAAA) for a given domain and, if it does, attempts to connect to that address — which makes it possible to distinguish a connection failure from a DNS resolution failure.</p>
+<p><strong>Full IPv6 Diagnostic</strong>: runs the tests above together and delivers a single conclusion: IPv6 working correctly, IPv6 present but without internet access, the router is not delivering IPv6, or the provider does not support IPv6.</p>
+
+<h3>Wi-Fi Information and Password</h3>
+<p>Displays the adapter name, network, signal strength, authentication, channel, radio type, router BSSID, Wi-Fi link speed, and password (Admin). If the machine has more than one Wi-Fi adapter, the choice made under Network Interface is respected when it corresponds to one of them; otherwise, the add-on prioritizes the adapter that is actually connected to a network.</p>
+
+<h3>Discover Public IP</h3>
+<p>Displays the public IP address used by the internet connection.</p>
+
+<h3>Locate External IP</h3>
+<p>Displays country, state, city, time zone, provider, organization, and ASN for any given IP address.</p>
+
+<h3>Smart Ping</h3>
+<p>Prompts for the destination and, optionally, the packet count (the default is set under Preferences &gt; Settings when the field is left blank) and a TCP port. Without a port, it performs a traditional ICMP ping. With a port specified, it instead tests the reachability of a TCP connection on that specific port — useful when ICMP is blocked by a firewall but the service itself responds normally (for example, testing port 443 on a server). Displays the entered destination, the resolved destination IP, packets sent and received, packet loss, minimum, average, and maximum latency, standard deviation, jitter, TTL (ICMP mode only), and an overall verdict (Excellent, Stable, or Unstable), based on packet loss and jitter.</p>
+
+<h3>Route Tracing</h3>
+<p>Prompts for the destination and, optionally, the hop limit (configurable default, 30 out of the box) and the protocol to use (IPv4, IPv6, or automatic, letting Windows decide based on DNS resolution, which can vary depending on the network). Displays the hop-by-hop map to the destination, with real-time audio cues as each hop responds.</p>
+
+<h3>Device Scan (submenu)</h3>
+<p><strong>Device Scan</strong>: finds active devices on the local network (via ping, ARP, and common port testing, always in local mode, without using the internet) and displays the IP, MAC address, and, when recognized, the manufacturer corresponding to the MAC.</p>
+<p><strong>Update Full Vendor Database</strong>: downloads the official IEEE MAC vendor database (approximately 3 MB, tens of thousands of vendors) and stores it locally, allowing Device Scan to automatically recognize many more vendors. This is a separate, optional action, since it requires internet access; it only checks whether a newer version is available (avoiding unnecessary downloads) and reports the date of the last update along with the number of vendors already present in the local database.</p>
+
+<h3>Internet Speed Test</h3>
+<p>Measures the actual download and upload speed of the connection using Cloudflare's public servers, in addition to latency, packet loss, jitter, the public IP used in the test, protocol (IPv4 or IPv6), and the datacenter that served the request. When speed is satisfactory but the connection shows instability (high jitter or packet loss), the add-on issues a warning — a condition that can go unnoticed when looking only at the Mbps figure, but that impairs voice and video calls, as well as online gaming, even with bandwidth to spare.</p>
+<p>The test size (Small, Medium, or Large) is set under Preferences &gt; Settings &gt; Network Tools, rather than being asked for on every run. The Large profile is intended for fast connections (1 Gbps or higher): it uses multiple parallel TCP connections, in a configurable number, since a single connection frequently cannot saturate a very fast link on its own.</p>
+
+<h3>Set Static IP, Revert to Dynamic IP</h3>
+<p>Require Administrator mode. When setting a static IP, the fields are already pre-filled with the interface's current IP, subnet mask, and gateway (when one is already configured), instead of a generic example — editing one or two fields is usually faster than filling in every value manually.</p>
+
+<h3>DNS Repair and Cleanup (submenu)</h3>
+<p>Requires Administrator mode. Each step is available as an independent item, allowing you to choose exactly what to run: <strong>Flush DNS Cache</strong>, <strong>Re-register DNS</strong>, <strong>Renew IP</strong> (releases and renews the address via DHCP, acting only on the active interface rather than every adapter on the machine, so that a disconnected or irrelevant adapter, such as a virtual one, does not interfere with the connection actually in use), <strong>Reset Winsock Stack</strong>, <strong>Reset TCP/IP Stack</strong> (the latter two typically require restarting the computer), and <strong>Full Repair</strong>, which runs the most common sequence of steps at once (DNS cache, IP, Winsock).</p>
+
+<h3>Firewall (submenu)</h3>
+<p><strong>Ports Actually Listening Now</strong>: lists ports with a process currently listening and identifies which process it is.</p>
+<p><strong>View Active Firewall Rules</strong>: displays inbound and outbound rules in separate tabs.</p>
+<p><strong>Create Firewall Rule (Admin)</strong>: a single wizard for creating inbound or outbound rules, by port or by program.</p>
+<p><strong>Remove Existing Rule (Admin)</strong>: removes any selected rule, warning when it was not created by Network Tools.</p>
+<p><strong>Firewall Status by Profile</strong>: reports whether the firewall is on or off for each network profile (private, public, domain).</p>
+<p><strong>Test Port Locally</strong>: combines three pieces of information about a specific port: whether something is listening on it, whether any firewall rule allows it, and whether a local test connection actually succeeds.</p>
+
+<h3>Connection Monitor (submenu)</h3>
+<p><strong>Turn On/Off</strong>: issues background audio alerts when the internet or the local router becomes unavailable or comes back online. Tracks latency to the DNS/internet and to the local router separately (with average, minimum, maximum, jitter, and standard deviation for each), since a connection can become unstable on one without affecting the other. Automatically detects network changes (for example, from Wi-Fi to Ethernet, or vice versa, even on the same router) and resets the latency history for the new network while preserving the session's drop counter. Can be configured to start automatically with NVDA, under Preferences &gt; Settings.</p>
+<p><strong>View Monitor Status</strong>: displays one tab per network (Wi-Fi identified by SSID, Ethernet by the router's MAC address) visited during the Monitor session, with the current network always listed first. Each tab shows the current connection state, time of the last check, latency and jitter for the router and for DNS/internet separately, availability, total time without connection, and the number of drops — all specific to that network. Returning to a previously visited network keeps adding to its existing statistics instead of starting over; a temporary signal drop (the same network reconnecting) also does not reset the count, only an actual network change does.</p>
+<p>With the Monitor active, the NVDA+Shift+C shortcut instantly announces the current connection status, using data already calculated in the background, without performing a new check at that moment.</p>
+
+<h3>Advanced Adapter Diagnostics (PowerShell)</h3>
+<p>Displays information not directly available through netsh: MTU, route metric, connection state, and counters for received and sent packets with errors or discards, obtained via PowerShell. This is the only part of the add-on that depends on PowerShell — everything else uses native, faster Windows commands. If PowerShell is unavailable or blocked by system policy, the add-on reports this clearly instead of failing without explanation.</p>
+
+<h2>Preferences &gt; Settings &gt; Network Tools</h2>
+<p>A dedicated settings panel, accessible from NVDA's Settings menu. Allows adjusting: automatic startup of Connection Monitor with NVDA; Monitor check interval; default Speed Test size; number of parallel connections in the Large Speed Test profile; default Ping packet count; default Traceroute hop limit; per-server timeout, number of queries per server, and number of servers in the final ranking for Find Best DNS; and the number of queries and timeout for the standalone Test a DNS Server function, configured separately from the Find Best DNS values.</p>
+
+<h2>About DNS server latency</h2>
+<p>The latency shown on the DNS Servers screen is measured by sending a query directly to each listed server, reflecting that server's own response time rather than Windows' default resolver. A server may fail to respond within the timeout (for example, if it is blocking this type of query or is unavailable); in that case, the add-on reports "no response" for that server, without interrupting the queries to the others.</p>
+<p>Provider identification first checks whether the address belongs to a known public service. If not, the add-on performs a reverse lookup on that IP, which usually reveals the local internet provider's domain. When neither approach yields a result, the add-on reports "not identified".</p>
+
+<h2>About the two speeds reported by the add-on</h2>
+<p>The add-on reports two distinct speed values, on different screens, measuring different things:</p>
+<p><strong>Network adapter speed</strong> (on the IP and Gateway Status screen): the maximum speed negotiated between the network card and Windows, obtained via WMI. Applies to both Ethernet and Wi-Fi. It is a stable value that normally only changes when switching networks or adapters.</p>
+<p><strong>Wi-Fi link speed</strong> (on the Wi-Fi Information and Password screen): the reception rate the Wi-Fi radio is negotiating with the router at that moment, obtained via netsh. This value reflects real-time conditions (distance from the router, interference, obstacles, other devices on the network) and can vary between queries. It comes directly from the network card driver; some drivers, particularly older ones, may report it incorrectly. If the value seems physically implausible for the adapter in question, it is worth also checking the speed under Windows Settings &gt; Network &amp; Internet &gt; Wi-Fi &gt; Properties, which typically uses a different data source.</p>
+<p>Neither of these two speeds should be confused with the result of the Internet Speed Test, which measures actual download and upload performance to the internet, rather than just the local negotiation between the computer and the router.</p>
+<p>For this reason, the figures may not match: the adapter's value reflects a local maximum capacity, the Wi-Fi value reflects the current moment of the local connection, and the Speed Test reflects actual performance to the internet.</p>
+
+<h2>About IPv6 diagnostics</h2>
+<p>The distinction between "the router is not delivering IPv6" and "the provider does not offer IPv6" is a heuristic based on two local signals: whether this computer received a global IPv6 address, and whether a default IPv6 route is being advertised on the local network. When no route is advertised, it is likely that the provider is not delivering IPv6 to the router; when the route exists but no global address reaches this computer, it is likely that the router is not forwarding the prefix. This is not an absolute certainty; when in doubt, it is worth checking the router's administration panel.</p>
+
+<h2>About the MAC vendor database</h2>
+<p>Device Scan identifies a MAC's vendor only after the full IEEE database has been downloaded at least once (see "Update Full Vendor Database"). Without it, the add-on still displays the MAC address normally, just without the vendor name. The database is stored in NVDA's configuration folder, so it remains available after add-on updates.</p>
+
+<h2>Languages</h2>
+<p>The add-on is available in Brazilian Portuguese, English, Spanish, French, Italian, German, Russian, and Simplified Chinese.</p>
+
+<h2>License</h2>
+<p>This add-on is distributed under the MIT license.</p>
+
+<h2>Requirements</h2>
+<p>NVDA 2024.1 or later. Windows 10 or later. Some functions (Advanced Adapter Diagnostics) require PowerShell to be available on the system; everything else works without it. Device Scan and the Speed Test require access to the local network; full vendor identification, the Speed Test, and Find Best DNS require internet access.</p>
+</body>
+</html>
