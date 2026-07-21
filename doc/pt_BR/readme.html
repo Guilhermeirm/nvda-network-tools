@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><title>Network Tools para NVDA V1.0.0</title></head>
+<body>
+<h1>Network Tools para NVDA V1.0.0</h1>
+<p>Network Tools é um complemento do NVDA que oferece diagnóstico de rede acessível para técnicos e administradores de rede cegos ou com baixa visão no Windows.</p>
+<p>Atalho: NVDA+Shift+R abre o menu principal a partir de qualquer aplicativo. NVDA+Shift+C anuncia o status atual da conexão (requer o Monitor de Conexão ativo).</p>
+<p>Use as setas para navegar, Enter para ativar um item e Escape para fechar a tela atual ou voltar ao menu anterior.</p>
+<p>Mensagens curtas de erro ou aviso (por exemplo, "nenhum DNS encontrado" ou "a interface selecionada não tem IP configurado") são apenas anunciadas pelo NVDA, sem abrir nenhuma tela. Nesses casos, o menu não reabre automaticamente; para continuar usando o complemento, acione o atalho novamente (NVDA+Shift+R).</p>
+
+<h2>Estrutura do menu</h2>
+<p>Logo acima da lista de ações, o menu principal apresenta uma faixa de abas chamada <strong>Interface de Rede</strong>, com "Automático" como primeira opção, seguida de uma aba para cada adaptador detectado na máquina. A partir da lista de ações, pressione Shift+Tab uma vez para alcançá-la. Use Ctrl+Tab, Ctrl+Shift+Tab ou as setas para alternar entre as abas; a troca é aplicada imediatamente, sem necessidade de confirmação. "Automático" mantém o comportamento padrão (o complemento detecta sozinho qual interface está em uso); selecionar uma aba específica passa a usar sempre aquele adaptador. Essa escolha é salva na configuração do NVDA e se aplica a todas as funções que dependem de uma interface específica: Status de IP, DNS, IPv6, Definir IP Estático e Voltar para IP Dinâmico. Também se aplica ao Wi-Fi, desde que a aba escolhida seja um dos adaptadores Wi-Fi da máquina. Caso o adaptador selecionado seja removido (por exemplo, um adaptador USB desconectado), o complemento retorna automaticamente para "Automático". Adaptadores ocultos do Windows (dispositivos internos de VPN, como WAN Miniport, sempre identificados com um asterisco ao final do nome, por exemplo "Conexão local* 2") não aparecem nas abas, já que nunca são úteis para seleção manual.</p>
+<p>Na sequência, o menu principal apresenta: Status de IP e Gateway, DNS (submenu), IPv6 (submenu), Informações e Senha Wi-Fi, Descobrir IP Público, Localizar IP Externo, Ping Inteligente, Rastreio de Rota, Varredura de Dispositivos (submenu), Teste de Velocidade da Internet, Definir IP Estático (Admin), Voltar para IP Dinâmico (Admin), Reparo e Limpeza DNS (submenu), Firewall (submenu), Monitor de Conexão (submenu) e Diagnóstico Avançado do Adaptador (PowerShell).</p>
+
+<h2>Funções</h2>
+
+<h3>Status de IP e Gateway</h3>
+<p>Apresenta nome do computador, interface, endereço IPv4, máscara, gateway, modo de IP (dinâmico ou fixo), endereço MAC, endereço IPv6 e velocidade do adaptador de rede ativo. Quando a Interface de Rede está em modo automático e a máquina possui mais de um adaptador com IP válido ao mesmo tempo (por exemplo, Ethernet e Wi-Fi ativos simultaneamente), a tela apresenta uma aba por adaptador em vez de escolher apenas um; navegue entre elas com Ctrl+Tab. Com uma interface selecionada manualmente, apenas essa interface é exibida.</p>
+
+<h3>DNS (submenu)</h3>
+<p><strong>Ver Servidores DNS Atuais</strong>: lista os servidores DNS em uso, com a latência de resposta medida diretamente em cada servidor e, quando possível, a identificação do provedor (por exemplo, Google Public DNS, Cloudflare, Quad9, OpenDNS, ou o provedor de internet local).</p>
+<p><strong>Buscar Melhor DNS</strong>: testa em paralelo os servidores DNS da lista gerenciável (ver "Gerenciar Servidores DNS" abaixo) e sugere o mais rápido e estável entre eles, sempre em comparação com o DNS atualmente em uso. A busca ocorre em duas etapas: primeiro, uma consulta rápida a todos os servidores da lista, para descartar os que não respondem; em seguida, apenas os melhores colocados (mais o DNS atual, que é sempre incluído) recebem várias consultas sucessivas, medindo jitter e perda de pacotes além da latência média. Isso permite identificar quando um servidor é rápido, porém instável, e não apenas qual deles é o mais rápido em uma única consulta. A quantidade de consultas por servidor, o tempo limite e o número de servidores que avançam para essa segunda etapa são configuráveis em Preferências &gt; Configurações &gt; Network Tools. Caso o resultado seja diferente do DNS atual, o complemento oferece a opção de trocar, definindo automaticamente o segundo colocado como servidor secundário para preservar a redundância.</p>
+<p><strong>Aplicar DNS Personalizado (Admin)</strong>: testa o servidor informado antes de aplicar a configuração. Se a porta 53 tradicional estiver bloqueada pelo roteador ou provedor, o complemento oferece um Modo Seguro que utiliza DNS via HTTPS (DoH) para contornar o bloqueio, quando o servidor escolhido é um provedor público com suporte documentado a DNS criptografado.</p>
+<p><strong>Gerenciar Servidores DNS</strong>: apresenta uma caixa de texto com todos os servidores testados pela Busca de Melhor DNS — os incluídos por padrão (provedores públicos conhecidos) e quaisquer outros adicionados pelo usuário. É possível editar, adicionar ou remover livremente qualquer entrada (um endereço IPv4 por linha), inclusive as incluídas por padrão, sem necessidade de atualizar o complemento.</p>
+<p><strong>Testar um Servidor DNS</strong>: testa um único servidor DNS informado no momento, sem afetar a lista gerenciável nem a configuração do sistema. Trata-se de um diagnóstico isolado, que apresenta latência média, mínima, máxima, jitter e perda. A consulta é realizada diretamente ao servidor por meio de uma requisição DNS real (não um ping ICMP). A quantidade de consultas e o tempo limite são configuráveis separadamente dos valores usados pela Busca de Melhor DNS.</p>
+
+<h3>IPv6 (submenu)</h3>
+<p>O Windows informa o endereço IPv6 configurado, mas não indica se ele está de fato funcional. Este submenu foi criado para esclarecer isso, com três testes independentes:</p>
+<p><strong>Teste de Conectividade IPv6</strong>: verifica se o IPv6 desta máquina alcança a internet, testando conexão direta com servidores públicos conhecidos.</p>
+<p><strong>Teste de DNS IPv6</strong>: verifica se o DNS resolve endereços IPv6 (AAAA) para um domínio informado e, em caso afirmativo, tenta estabelecer conexão nesse endereço — o que permite diferenciar uma falha de conexão de uma falha de resolução de DNS.</p>
+<p><strong>Diagnóstico IPv6 Completo</strong>: executa os testes anteriores em conjunto e apresenta uma conclusão única: IPv6 funcionando corretamente, IPv6 presente mas sem acesso à internet, roteador não está entregando IPv6, ou o provedor não oferece suporte a IPv6.</p>
+
+<h3>Informações e Senha Wi-Fi</h3>
+<p>Apresenta nome do adaptador, rede, intensidade do sinal, autenticação, canal, tipo de rádio, BSSID do roteador, velocidade do link Wi-Fi e senha (Admin). Caso a máquina possua mais de um adaptador Wi-Fi, a escolha feita em Interface de Rede é respeitada quando corresponder a um deles; caso contrário, o complemento prioriza o adaptador efetivamente conectado a uma rede.</p>
+
+<h3>Descobrir IP Público</h3>
+<p>Apresenta o endereço IP público utilizado pela conexão de internet.</p>
+
+<h3>Localizar IP Externo</h3>
+<p>Apresenta país, estado, cidade, fuso horário, provedor, organização e ASN de qualquer endereço IP informado.</p>
+
+<h3>Ping Inteligente</h3>
+<p>Solicita o destino e, opcionalmente, a quantidade de pacotes (o valor padrão é definido em Preferências &gt; Configurações quando o campo é deixado em branco) e uma porta TCP. Sem porta informada, realiza um ping ICMP tradicional. Com uma porta especificada, testa em vez disso o alcance de uma conexão TCP naquela porta — útil quando o ICMP está bloqueado por firewall, mas o serviço em si responde normalmente (por exemplo, testar a porta 443 de um servidor). Apresenta o destino informado, o IP resolvido, pacotes enviados e recebidos, perda de pacotes, latência mínima, média e máxima, desvio padrão, jitter, TTL (somente no modo ICMP) e um veredito geral (Excelente, Estável ou Instável), com base na perda de pacotes e no jitter.</p>
+
+<h3>Rastreio de Rota</h3>
+<p>Solicita o destino e, opcionalmente, o limite de saltos (padrão configurável, 30 por padrão de fábrica) e o protocolo a ser utilizado (IPv4, IPv6, ou automático, deixando o Windows decidir com base na resolução de DNS, que pode variar conforme a rede). Apresenta o mapa de saltos até o destino, com sinais sonoros em tempo real à medida que cada salto responde.</p>
+
+<h3>Varredura de Dispositivos (submenu)</h3>
+<p><strong>Varredura de Dispositivos</strong>: localiza dispositivos ativos na rede local (por meio de ping, ARP e teste de portas comuns, sempre em modo local, sem uso de internet) e apresenta IP, endereço MAC e, quando reconhecido, o fabricante correspondente ao MAC.</p>
+<p><strong>Atualizar Base de Fabricantes Completa</strong>: baixa a base oficial de fabricantes por MAC mantida pela IEEE (aproximadamente 3 MB, dezenas de milhares de fabricantes) e a armazena localmente, permitindo que a Varredura de Dispositivos reconheça automaticamente um número muito maior de fabricantes. Trata-se de uma ação separada e opcional, por depender de acesso à internet; verifica apenas se há uma versão mais recente disponível (evitando downloads desnecessários) e informa a data da última atualização e a quantidade de fabricantes já presentes na base local.</p>
+
+<h3>Teste de Velocidade da Internet</h3>
+<p>Mede a velocidade real de download e upload da conexão utilizando os servidores públicos da Cloudflare, além de latência, perda de pacotes, jitter, IP público utilizado no teste, protocolo (IPv4 ou IPv6) e o datacenter que atendeu à solicitação. Quando a velocidade é satisfatória, mas a conexão apresenta instabilidade (jitter ou perda de pacotes elevados), o complemento emite um aviso — uma condição que pode passar despercebida ao observar apenas o valor em Mbps, mas que prejudica chamadas de voz e vídeo, além de jogos online, mesmo havendo banda disponível.</p>
+<p>O tamanho do teste (Pequeno, Médio ou Grande) é definido em Preferências &gt; Configurações &gt; Network Tools, em vez de ser solicitado a cada execução. O perfil Grande é indicado para conexões rápidas (1 Gbps ou superior): utiliza múltiplas conexões TCP em paralelo, em quantidade configurável, já que uma única conexão frequentemente não é capaz de saturar sozinha um link de alta velocidade.</p>
+
+<h3>Definir IP Estático, Voltar para IP Dinâmico</h3>
+<p>Requerem modo Administrador. Ao definir um IP estático, os campos já são apresentados preenchidos com o IP, a máscara e o gateway atuais da interface (quando já houver alguma configuração), em vez de um exemplo genérico — editar um ou dois campos costuma ser mais rápido do que preencher todos os valores manualmente.</p>
+
+<h3>Reparo e Limpeza DNS (submenu)</h3>
+<p>Requer modo Administrador. Cada etapa está disponível como um item independente, permitindo escolher exatamente o que executar: <strong>Limpar Cache DNS</strong>, <strong>Registrar DNS Novamente</strong>, <strong>Renovar IP</strong> (libera e renova o endereço via DHCP, atuando apenas sobre a interface ativa, e não sobre todos os adaptadores da máquina, evitando que um adaptador desconectado ou irrelevante, como um adaptador virtual, interfira na conexão realmente utilizada), <strong>Resetar Pilha Winsock</strong>, <strong>Resetar Pilha TCP/IP</strong> (as duas últimas normalmente exigem reinicialização do computador) e <strong>Reparo Completo</strong>, que executa em sequência as etapas mais comuns (cache DNS, IP e Winsock).</p>
+
+<h3>Firewall (submenu)</h3>
+<p><strong>Portas Realmente Escutando Agora</strong>: lista as portas com algum processo em escuta no momento e identifica qual processo é responsável.</p>
+<p><strong>Ver Regras de Firewall Ativas</strong>: apresenta as regras de entrada e de saída em abas separadas.</p>
+<p><strong>Criar Regra de Firewall (Admin)</strong>: assistente único para criação de regras de entrada ou saída, por porta ou por programa.</p>
+<p><strong>Remover Regra Existente (Admin)</strong>: remove qualquer regra selecionada, alertando quando ela não foi criada pelo Network Tools.</p>
+<p><strong>Status do Firewall por Perfil</strong>: informa se o firewall está ativo ou inativo em cada perfil de rede (privado, público, domínio).</p>
+<p><strong>Testar Porta Localmente</strong>: reúne três informações sobre uma porta específica: se há algo em escuta nela, se alguma regra de firewall a libera, e se uma conexão local de teste é efetivamente bem-sucedida.</p>
+
+<h3>Monitor de Conexão (submenu)</h3>
+<p><strong>Ligar/Desligar</strong>: emite avisos sonoros em segundo plano quando a internet ou o roteador local ficam indisponíveis ou voltam a funcionar. Acompanha separadamente a latência até o DNS/internet e até o roteador local (com média, mínima, máxima, jitter e desvio padrão de cada uma), já que uma conexão pode apresentar instabilidade em um dos dois sem afetar o outro. Detecta automaticamente trocas de rede (por exemplo, de Wi-Fi para Ethernet, ou vice-versa, mesmo dentro do mesmo roteador) e reinicia o histórico de latência para a nova rede, preservando o contador de quedas da sessão. Pode ser configurado para iniciar automaticamente com o NVDA, em Preferências &gt; Configurações.</p>
+<p><strong>Ver Status do Monitor</strong>: apresenta uma aba por rede (Wi-Fi identificada pelo SSID, Ethernet pelo MAC do roteador) visitada durante a sessão do Monitor, com a rede atual sempre em primeiro lugar. Cada aba mostra estado atual da conexão, horário da última verificação, latências e jitter do roteador e do DNS/internet separadamente, disponibilidade, tempo total sem conexão e número de quedas — tudo específico daquela rede. Voltar para uma rede já visitada continua acumulando nas estatísticas existentes, em vez de reiniciar; uma queda de sinal temporária (a mesma rede reconectando) também não reinicia a contagem, só uma troca real de rede o faz.</p>
+<p>Com o Monitor ativo, o atalho NVDA+Shift+C anuncia instantaneamente o status atual da conexão, utilizando os dados já calculados em segundo plano, sem realizar uma nova verificação no momento.</p>
+
+<h3>Diagnóstico Avançado do Adaptador (PowerShell)</h3>
+<p>Apresenta informações não disponíveis diretamente pelo netsh: MTU, métrica de rota, estado da conexão e contadores de pacotes recebidos e enviados com erro ou descarte, obtidos via PowerShell. É o único ponto do complemento que depende do PowerShell — todo o restante utiliza comandos nativos do Windows, mais rápidos. Caso o PowerShell não esteja disponível ou seja bloqueado por política do sistema, o complemento informa isso claramente, em vez de falhar sem explicação.</p>
+
+<h2>Preferências &gt; Configurações &gt; Network Tools</h2>
+<p>Painel de configurações próprio, acessível pelo menu de Configurações do NVDA. Permite ajustar: início automático do Monitor de Conexão com o NVDA; intervalo de verificação do Monitor; tamanho padrão do Teste de Velocidade; quantidade de conexões paralelas no perfil Grande do Teste de Velocidade; quantidade padrão de pacotes do Ping; limite padrão de saltos do Traceroute; tempo limite por servidor, quantidade de consultas por servidor e quantidade de servidores no ranking final da Busca de Melhor DNS; e quantidade de consultas e tempo limite do Teste de um Servidor DNS avulso, configurados separadamente dos valores da Busca de Melhor DNS.</p>
+
+<h2>Sobre a latência dos servidores DNS</h2>
+<p>A latência apresentada na tela de Servidores DNS é medida por meio do envio de uma consulta diretamente a cada servidor listado, refletindo o tempo de resposta daquele servidor especificamente, e não do resolvedor padrão do Windows. Um servidor pode não responder dentro do tempo limite (por exemplo, por estar bloqueando esse tipo de consulta ou estar indisponível); nesse caso, o complemento informa "sem resposta" para aquele servidor, sem interromper a consulta dos demais.</p>
+<p>A identificação do provedor primeiro verifica se o endereço pertence a um serviço público conhecido. Caso não pertença, o complemento realiza uma consulta reversa nesse IP, o que costuma revelar o domínio do provedor de internet local. Quando nenhuma das duas abordagens obtém resultado, o complemento informa "não identificado".</p>
+
+<h2>Sobre as duas velocidades apresentadas pelo complemento</h2>
+<p>O complemento apresenta dois valores de velocidade distintos, em telas diferentes, que medem grandezas diferentes:</p>
+<p><strong>Velocidade do adaptador de rede</strong> (na tela de Status de IP e Gateway): corresponde à velocidade máxima negociada entre a placa de rede e o Windows, obtida via WMI. Aplica-se tanto a Ethernet quanto a Wi-Fi. É um valor estável, que normalmente só se altera ao trocar de rede ou de adaptador.</p>
+<p><strong>Velocidade do link Wi-Fi</strong> (na tela de Informações e Senha Wi-Fi): corresponde à taxa de recepção que o rádio Wi-Fi está negociando com o roteador naquele instante, obtida via netsh. Esse valor reflete as condições reais do momento (distância do roteador, interferência, obstáculos, outros dispositivos na rede) e pode variar entre consultas. O valor é fornecido diretamente pelo driver da placa de rede; alguns drivers, sobretudo versões mais antigas, podem relatá-lo de forma incorreta. Caso o valor pareça fisicamente implausível para o adaptador em questão, recomenda-se conferi-lo também em Configurações do Windows &gt; Rede e Internet &gt; Wi-Fi &gt; Propriedades, que costuma utilizar uma fonte de dados diferente.</p>
+<p>Nenhuma dessas duas velocidades deve ser confundida com o resultado do Teste de Velocidade da Internet, que mede o desempenho real de download e upload até a internet, e não apenas a negociação local entre o computador e o roteador.</p>
+<p>Por esse motivo, os valores podem não coincidir: o do adaptador reflete uma capacidade máxima local, o do Wi-Fi reflete o momento atual da conexão local, e o Teste de Velocidade reflete o desempenho real até a internet.</p>
+
+<h2>Sobre o diagnóstico de IPv6</h2>
+<p>A distinção entre "roteador não entrega IPv6" e "provedor não oferece IPv6" é uma heurística baseada em dois sinais locais: se este computador recebeu um endereço IPv6 global, e se existe uma rota padrão IPv6 anunciada na rede local. Quando nenhuma rota é anunciada, é provável que o provedor não esteja entregando IPv6 ao roteador; quando a rota existe, mas nenhum endereço global chega a este computador, é provável que o roteador não esteja repassando o prefixo. Não se trata de uma certeza absoluta; em caso de dúvida, recomenda-se consultar o painel administrativo do roteador.</p>
+
+<h2>Sobre a base de fabricantes por MAC</h2>
+<p>A Varredura de Dispositivos identifica o fabricante de um MAC somente após a base completa da IEEE ter sido baixada ao menos uma vez (ver "Atualizar Base de Fabricantes Completa"). Sem isso, o complemento continua apresentando o endereço MAC normalmente, apenas sem o nome do fabricante. A base é armazenada na pasta de configuração do NVDA, portanto permanece disponível após atualizações do complemento.</p>
+
+<h2>Idiomas</h2>
+<p>O complemento está disponível em português do Brasil, inglês, espanhol, francês, italiano, alemão, russo e chinês simplificado.</p>
+
+<h2>Licença</h2>
+<p>Este complemento é distribuído sob a licença MIT.</p>
+
+<h2>Requisitos</h2>
+<p>NVDA 2024.1 ou superior. Windows 10 ou superior. Algumas funções (Diagnóstico Avançado do Adaptador) exigem que o PowerShell esteja disponível no sistema; as demais funcionam sem essa dependência. A Varredura de Dispositivos e o Teste de Velocidade requerem acesso à rede local; a identificação completa de fabricantes, o Teste de Velocidade e a Busca de Melhor DNS requerem acesso à internet.</p>
+</body>
+</html>
