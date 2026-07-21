@@ -2,11 +2,11 @@
 
 **Diagnose, monitor, and manage your network entirely from the keyboard.**
 
-Network Tools is an [NVDA](https://www.nvaccess.org/) add-on that brings accessible, keyboard-driven network diagnostics to Windows — built for IT technicians, network administrators, and anyone who needs real network troubleshooting tools that work naturally with a screen reader, not a scaled-down version of a sighted-only utility.
+Network Tools is an [NVDA](https://www.nvaccess.org/) add-on that brings a unified, keyboard-driven suite of network diagnostics to Windows — built to streamline the workflow of IT technicians, network administrators, and power users who rely on screen readers.
 
 ## Overview
 
-Most built-in Windows network tools (Command Prompt utilities, the Network and Sharing Center, Resource Monitor) were never designed with screen reader users in mind. Network Tools closes that gap with a single, organized menu covering the diagnostics a network professional actually needs day to day — IP configuration, DNS, Wi-Fi, connectivity testing, device discovery, firewall rules, and continuous connection monitoring — all spoken clearly by NVDA, with no visual interpretation required.
+Network Tools centralizes essential network diagnostics and management utilities into a single, organized menu structure. Instead of switching between multiple separate Windows applications, command-line tools, or deep configuration settings, this add-on brings everything a professional needs day to day into a seamless, keyboard-optimized workflow. Every feature — from quick IP checks to live connection monitoring — is designed to interact perfectly with NVDA commands, delivering data clearly and efficiently.
 
 ## Features
 
