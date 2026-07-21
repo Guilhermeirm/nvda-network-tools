@@ -32,7 +32,8 @@ Most built-in Windows network tools (Command Prompt utilities, the Network and S
 
 Once installed, press **NVDA+Shift+R** anywhere to open the main menu, and **NVDA+Shift+C** to instantly hear the current connection status (requires the Connection Monitor to be running). Everything else is organized into a straightforward menu and submenus, navigable with the arrow keys.
 
-This README intentionally keeps things brief — the add-on ships with a complete, in-depth guide covering every screen, field, and setting, available both in [English](doc/en/readme.html) and [Portuguese](doc/pt_BR/readme.html), and directly from within NVDA (Add-ons Store → Network Tools → About).
+This README intentionally keeps things brief — the add-on ships with a complete, in-depth guide covering every screen, field, and setting, available both in [English](https://htmlpreview.github.io/?https://github.com/Guilhermeirm/nvda-network-tools/blob/main/doc/en/readme.html) and [Portuguese](https
+://htmlpreview.github.io/?https://github.com/Guilhermeirm/nvda-network-tools/blob/main/doc/pt_BR/readme.html), and directly from within NVDA (Add-ons Store → Network Tools → About).
 
 ## Compatibility
 
