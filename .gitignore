@@ -1,0 +1,21 @@
+# Claude Code project instructions (local only)
+CLAUDE.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Packaged add-on output
+*.nvda-addon
+build/
+dist/
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
