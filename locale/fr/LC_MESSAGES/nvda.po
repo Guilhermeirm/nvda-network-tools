@@ -1,0 +1,2074 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: networkTools 9.5.0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-07-08 09:40+0000\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: globalPlugins/networkTools.py:68 globalPlugins/networkTools.py:288
+#: globalPlugins/networkTools.py:310
+msgid "Status de IP e Gateway"
+msgstr "État de l'IP et de la passerelle"
+
+#: globalPlugins/networkTools.py:70 globalPlugins/networkTools.py:194
+msgid "DNS"
+msgstr "DNS"
+
+#: globalPlugins/networkTools.py:72
+msgid "Informações e Senha Wi-Fi"
+msgstr "Informations et mot de passe Wi-Fi"
+
+#: globalPlugins/networkTools.py:74
+msgid "Descobrir IP Público"
+msgstr "Découvrir l'IP publique"
+
+#: globalPlugins/networkTools.py:76
+msgid "Ping Inteligente"
+msgstr "Ping intelligent"
+
+#: globalPlugins/networkTools.py:78
+msgid "Rastreio de Rota"
+msgstr "Traceroute"
+
+#: globalPlugins/networkTools.py:80
+msgid "Varredura de Dispositivos"
+msgstr "Recherche d'appareils"
+
+#: globalPlugins/networkTools.py:82
+msgid "Localizar IP Externo"
+msgstr "Localiser une IP externe"
+
+#: globalPlugins/networkTools.py:84 globalPlugins/networkTools.py:845
+msgid "Teste de Velocidade da Internet"
+msgstr "Test de Vitesse Internet"
+
+#: globalPlugins/networkTools.py:86
+msgid "Definir IP Estático (Admin)"
+msgstr "Définir une IP statique (Admin)"
+
+#: globalPlugins/networkTools.py:88
+msgid "Voltar para IP Dinâmico (Admin)"
+msgstr "Revenir au DHCP (Admin)"
+
+#: globalPlugins/networkTools.py:92
+msgid "Firewall (submenu)"
+msgstr "Pare-feu (sous-menu)"
+
+#: globalPlugins/networkTools.py:107
+msgid "Portas Realmente Escutando Agora"
+msgstr "Ports Réellement en Écoute Maintenant"
+
+#: globalPlugins/networkTools.py:109
+msgid "Ver Regras de Firewall Ativas (Entrada e Saída)"
+msgstr "Voir les Règles de Pare-feu Actives (Entrée et Sortie)"
+
+#: globalPlugins/networkTools.py:111
+msgid "Criar Regra de Firewall (Admin)"
+msgstr "Créer une Règle de Pare-feu (Admin)"
+
+#: globalPlugins/networkTools.py:113
+msgid "Remover Regra Existente (Admin)"
+msgstr "Supprimer une Règle Existante (Admin)"
+
+#: globalPlugins/networkTools.py:115 globalPlugins/networkTools.py:1195
+msgid "Status do Firewall por Perfil"
+msgstr "État du Pare-feu par Profil"
+
+#: globalPlugins/networkTools.py:117 globalPlugins/networkTools.py:1200
+msgid "Testar Porta Localmente"
+msgstr "Tester le Port Localement"
+
+#: globalPlugins/networkTools.py:129
+msgid "Ver Servidores DNS Atuais"
+msgstr "Voir les Serveurs DNS Actuels"
+
+#: globalPlugins/networkTools.py:131
+msgid "Aplicar DNS Personalizado (Admin)"
+msgstr "Appliquer un DNS Personnalisé (Admin)"
+
+#: globalPlugins/networkTools.py:158
+msgid "Abre o menu do Network Tools"
+msgstr "Ouvre le menu Network Tools"
+
+#: globalPlugins/networkTools.py:210
+msgid "Firewall"
+msgstr "Pare-feu"
+
+#: globalPlugins/networkTools.py:266
+msgid "Requer NVDA rodando como Administrador."
+msgstr "Nécessite que NVDA soit exécuté en tant qu'administrateur."
+
+#: globalPlugins/networkTools.py:273
+msgid "Consultando IP, aguarde."
+msgstr "Vérification de l'IP, veuillez patienter."
+
+#: globalPlugins/networkTools.py:283
+msgid "Dinâmico (DHCP)"
+msgstr "Dynamique (DHCP)"
+
+#: globalPlugins/networkTools.py:285
+msgid "Fixo (Estático)"
+msgstr "Fixe (Statique)"
+
+#: globalPlugins/networkTools.py:287 globalPlugins/networkTools.py:536
+#: globalPlugins/networkTools.py:537 globalPlugins/networkTools.py:538
+msgid "não detectado"
+msgstr "non détecté"
+
+#: globalPlugins/networkTools.py:289 globalPlugins/networkTools.py:311
+msgid "Nome do computador"
+msgstr "Nom de l'ordinateur"
+
+#: globalPlugins/networkTools.py:290 globalPlugins/networkTools.py:312
+#: globalPlugins/networkTools.py:410 globalPlugins/networkTools.py:479
+#: globalPlugins/networkTools.py:889 globalPlugins/networkTools.py:909
+msgid "Interface"
+msgstr "Interface"
+
+#: globalPlugins/networkTools.py:291 globalPlugins/networkTools.py:313
+msgid "Endereço IPv4"
+msgstr "Adresse IPv4"
+
+#: globalPlugins/networkTools.py:292 globalPlugins/networkTools.py:314
+#: globalPlugins/networkTools.py:873 globalPlugins/networkTools.py:889
+msgid "Máscara"
+msgstr "Masque"
+
+#: globalPlugins/networkTools.py:292 globalPlugins/networkTools.py:314
+msgid "não encontrada"
+msgstr "introuvable"
+
+#: globalPlugins/networkTools.py:293 globalPlugins/networkTools.py:315
+#: globalPlugins/networkTools.py:873 globalPlugins/networkTools.py:889
+msgid "Gateway"
+msgstr "Passerelle"
+
+#: globalPlugins/networkTools.py:293 globalPlugins/networkTools.py:295
+#: globalPlugins/networkTools.py:296 globalPlugins/networkTools.py:313
+#: globalPlugins/networkTools.py:315 globalPlugins/networkTools.py:316
+#: globalPlugins/networkTools.py:317
+msgid "não encontrado"
+msgstr "introuvable"
+
+#: globalPlugins/networkTools.py:294
+msgid "Modo de IP"
+msgstr "Mode IP"
+
+#: globalPlugins/networkTools.py:295 globalPlugins/networkTools.py:316
+msgid "Endereço MAC"
+msgstr "Adresse MAC"
+
+#: globalPlugins/networkTools.py:296 globalPlugins/networkTools.py:317
+msgid "Endereço IPv6"
+msgstr "Adresse IPv6"
+
+#: globalPlugins/networkTools.py:297 globalPlugins/networkTools.py:318
+msgid "Velocidade do adaptador de rede"
+msgstr "Vitesse de l'adaptateur réseau"
+
+#: globalPlugins/networkTools.py:297 globalPlugins/networkTools.py:318
+#: globalPlugins/networkTools.py:539
+msgid "não detectada"
+msgstr "non détectée"
+
+#: globalPlugins/networkTools.py:303
+msgid "Erro ao obter IP."
+msgstr "Erreur lors de l'obtention de l'IP."
+
+#: globalPlugins/networkTools.py:323
+msgid "Consultando DNS, aguarde."
+msgstr "Vérification du DNS, veuillez patienter."
+
+#: globalPlugins/networkTools.py:331
+msgid "Erro ao obter DNS."
+msgstr "Erreur lors de l'obtention du DNS."
+
+#: globalPlugins/networkTools.py:335
+msgid "Nenhum DNS encontrado."
+msgstr "Aucun DNS trouvé."
+
+#: globalPlugins/networkTools.py:337
+msgid "Servidores DNS:"
+msgstr "Serveurs DNS :"
+
+#: globalPlugins/networkTools.py:342 globalPlugins/networkTools.py:412
+#: globalPlugins/networkTools.py:415 globalPlugins/networkTools.py:844
+#, python-brace-format
+msgid "{ms} ms"
+msgstr "{ms} ms"
+
+#: globalPlugins/networkTools.py:342 globalPlugins/networkTools.py:844
+msgid "sem resposta"
+msgstr "aucune réponse"
+
+#: globalPlugins/networkTools.py:344
+#, python-brace-format
+msgid "Servidor {n}"
+msgstr "Serveur {n}"
+
+#: globalPlugins/networkTools.py:345 globalPlugins/networkTools.py:846
+msgid "Latência"
+msgstr "Latence"
+
+#: globalPlugins/networkTools.py:346 globalPlugins/networkTools.py:827
+msgid "Provedor"
+msgstr "Fournisseur"
+
+#: globalPlugins/networkTools.py:346
+msgid "não identificado"
+msgstr "non identifié"
+
+#: globalPlugins/networkTools.py:350
+msgid "Servidores DNS"
+msgstr "Serveurs DNS"
+
+#: globalPlugins/networkTools.py:359 globalPlugins/networkTools.py:882
+#: globalPlugins/networkTools.py:902
+msgid "Interface não detectada."
+msgstr "Interface non détectée."
+
+#: globalPlugins/networkTools.py:372
+msgid "Aplicar DNS Personalizado"
+msgstr "Appliquer un DNS Personnalisé"
+
+#: globalPlugins/networkTools.py:380
+msgid "Informe o DNS primário."
+msgstr "Indiquez le DNS primaire."
+
+#: globalPlugins/networkTools.py:383 globalPlugins/networkTools.py:411
+msgid "DNS primário"
+msgstr "DNS primaire"
+
+#: globalPlugins/networkTools.py:383 globalPlugins/networkTools.py:416
+#: globalPlugins/networkTools.py:484
+msgid "DNS secundário"
+msgstr "DNS secondaire"
+
+#: globalPlugins/networkTools.py:389
+#, python-brace-format
+msgid "IP inválido em {campo}: {valor}"
+msgstr "IP invalide dans {campo} : {valor}"
+
+#: globalPlugins/networkTools.py:394
+#, python-brace-format
+msgid "Testando o servidor DNS {ip}, aguarde."
+msgstr "Test du serveur DNS {ip}, veuillez patienter."
+
+#: globalPlugins/networkTools.py:412
+msgid "Latência do teste"
+msgstr "Latence du test"
+
+#: globalPlugins/networkTools.py:415
+msgid "sem resposta ao teste (configurado mesmo assim)"
+msgstr "aucune réponse au test (configuré quand même)"
+
+#: globalPlugins/networkTools.py:418 globalPlugins/networkTools.py:486
+#: globalPlugins/networkTools.py:489 globalPlugins/networkTools.py:1240
+msgid "Aviso"
+msgstr "Avertissement"
+
+#: globalPlugins/networkTools.py:418 globalPlugins/networkTools.py:486
+#, python-brace-format
+msgid "Não foi possível configurar o DNS secundário: {detail}"
+msgstr "Impossible de configurer le DNS secondaire : {detail}"
+
+#: globalPlugins/networkTools.py:420 globalPlugins/networkTools.py:495
+#: globalPlugins/networkTools.py:909 globalPlugins/networkTools.py:1118
+msgid "Status"
+msgstr "Statut"
+
+#: globalPlugins/networkTools.py:420
+msgid "✔ Aplicado com sucesso (porta 53 disponível)"
+msgstr "✔ Appliqué avec succès (port 53 disponible)"
+
+#: globalPlugins/networkTools.py:421
+msgid "DNS Personalizado Aplicado"
+msgstr "DNS Personnalisé Appliqué"
+
+#: globalPlugins/networkTools.py:424
+#, python-brace-format
+msgid "O teste funcionou, mas houve erro ao aplicar a configuração: {detail}"
+msgstr ""
+"Le test a fonctionné, mais une erreur est survenue lors de l'application de "
+"la configuration : {detail}"
+
+#: globalPlugins/networkTools.py:436
+#, python-brace-format
+msgid ""
+"Não foi possível confirmar o DNS {ip} pela porta 53 (isso costuma indicar "
+"bloqueio pelo roteador ou pelo provedor de internet). O Modo Seguro (DNS via"
+" HTTPS) não está disponível para este servidor, porque ele não é um provedor"
+" público com suporte documentado a DNS criptografado. Tente novamente com um"
+" provedor como Google (8.8.8.8), Cloudflare (1.1.1.1) ou Quad9 (9.9.9.9)."
+msgstr ""
+"Impossible de confirmer le DNS {ip} via le port 53 (cela indique "
+"généralement un blocage par le routeur ou le fournisseur d'accès à "
+"Internet). Le Mode Sécurisé (DNS via HTTPS) n'est pas disponible pour ce "
+"serveur, car il ne s'agit pas d'un fournisseur public avec prise en charge "
+"documentée du DNS chiffré. Réessayez avec un fournisseur comme Google "
+"(8.8.8.8), Cloudflare (1.1.1.1) ou Quad9 (9.9.9.9)."
+
+#: globalPlugins/networkTools.py:446
+msgid "Porta 53 Bloqueada"
+msgstr "Port 53 Bloqué"
+
+#: globalPlugins/networkTools.py:457
+msgid "Testando DNS via HTTPS (Modo Seguro), aguarde."
+msgstr "Test du DNS via HTTPS (Mode Sécurisé), veuillez patienter."
+
+#: globalPlugins/networkTools.py:462
+#, python-brace-format
+msgid ""
+"O Modo Seguro também não funcionou: o servidor {ip} não respondeu pela porta"
+" 443 (HTTPS). Isso pode indicar um bloqueio mais amplo da rede, ou que o "
+"serviço esteja temporariamente indisponível."
+msgstr ""
+"Le Mode Sécurisé n'a pas fonctionné non plus : le serveur {ip} n'a pas "
+"répondu sur le port 443 (HTTPS). Cela peut indiquer un blocage réseau plus "
+"large, ou que le service est temporairement indisponible."
+
+#: globalPlugins/networkTools.py:471
+#, python-brace-format
+msgid ""
+"O teste via HTTPS funcionou, mas este Windows não aceitou o registro de DNS "
+"criptografado: {detail} Esse recurso requer uma versão mais recente do "
+"Windows 10 ou 11."
+msgstr ""
+"Le test via HTTPS a fonctionné, mais ce Windows n'a pas accepté "
+"l'enregistrement du DNS chiffré : {detail} Cette fonctionnalité nécessite "
+"une version plus récente de Windows 10 ou 11."
+
+#: globalPlugins/networkTools.py:480
+msgid "Servidor DNS"
+msgstr "Serveur DNS"
+
+#: globalPlugins/networkTools.py:481
+msgid "Modo"
+msgstr "Mode"
+
+#: globalPlugins/networkTools.py:481
+msgid "DNS via HTTPS (DoH)"
+msgstr "DNS via HTTPS (DoH)"
+
+#: globalPlugins/networkTools.py:490
+msgid ""
+"O DNS secundário usa a porta 53 tradicional, não o Modo Seguro - se o mesmo "
+"bloqueio afetar esse servidor, o Windows deve usar o primário normalmente."
+msgstr ""
+"Le DNS secondaire utilise le port 53 traditionnel, pas le Mode Sécurisé — si"
+" le même blocage affecte ce serveur, Windows devrait utiliser normalement le"
+" DNS primaire."
+
+#: globalPlugins/networkTools.py:495
+msgid "✔ Proteção ativa — bloqueio de porta 53 contornado"
+msgstr "✔ Protection active — blocage du port 53 contourné"
+
+#: globalPlugins/networkTools.py:496
+msgid "Modo Seguro Ativo"
+msgstr "Mode Sécurisé Actif"
+
+#: globalPlugins/networkTools.py:498
+#, python-brace-format
+msgid "Erro ao aplicar o DNS: {detail}"
+msgstr "Erreur lors de l'application du DNS : {detail}"
+
+#: globalPlugins/networkTools.py:502
+msgid "Consultando Wi-Fi, aguarde."
+msgstr "Vérification du Wi-Fi, veuillez patienter."
+
+#: globalPlugins/networkTools.py:505
+msgid "Nenhuma rede Wi-Fi."
+msgstr "Aucun réseau Wi-Fi."
+
+#: globalPlugins/networkTools.py:516
+#, python-brace-format
+msgid ""
+"Conectado via cabo Ethernet (adaptador: {iface}). Nenhuma rede Wi-Fi ativa "
+"no momento."
+msgstr ""
+"Connecté via câble Ethernet (adaptateur : {iface}). Aucun réseau Wi-Fi actif"
+" pour le moment."
+
+#: globalPlugins/networkTools.py:521
+msgid "Nenhuma rede Wi-Fi conectada no momento."
+msgstr "Aucun réseau Wi-Fi connecté pour le moment."
+
+#: globalPlugins/networkTools.py:532
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+#: globalPlugins/networkTools.py:533
+msgid "Rede"
+msgstr "Réseau"
+
+#: globalPlugins/networkTools.py:534
+msgid "Sinal"
+msgstr "Signal"
+
+#: globalPlugins/networkTools.py:535
+msgid "Autenticação"
+msgstr "Authentification"
+
+#: globalPlugins/networkTools.py:536
+msgid "Canal"
+msgstr "Canal"
+
+#: globalPlugins/networkTools.py:537
+msgid "Tipo de rádio"
+msgstr "Type de radio"
+
+#: globalPlugins/networkTools.py:538
+msgid "BSSID (roteador)"
+msgstr "BSSID (routeur)"
+
+#: globalPlugins/networkTools.py:539
+msgid "Velocidade do link Wi-Fi"
+msgstr "Vitesse de la liaison Wi-Fi"
+
+#: globalPlugins/networkTools.py:540
+msgid "Senha"
+msgstr "Mot de passe"
+
+#: globalPlugins/networkTools.py:540
+msgid "não disponível (requer Admin)"
+msgstr "non disponible (nécessite Admin)"
+
+#: globalPlugins/networkTools.py:546
+msgid "Buscando IP público, aguarde."
+msgstr "Recherche de l'IP publique, veuillez patienter."
+
+#: globalPlugins/networkTools.py:551 globalPlugins/networkTools.py:563
+msgid "IP Público"
+msgstr "IP publique"
+
+#: globalPlugins/networkTools.py:551 globalPlugins/networkTools.py:563
+#, python-brace-format
+msgid "IP Público: {ip}"
+msgstr "IP publique : {ip}"
+
+#: globalPlugins/networkTools.py:565
+msgid "Não foi possível obter o IP público."
+msgstr "Impossible d'obtenir l'IP publique."
+
+#: globalPlugins/networkTools.py:572
+msgid "Ping"
+msgstr "Ping"
+
+#: globalPlugins/networkTools.py:572
+msgid "Endereço ou IP para pingar:"
+msgstr "Adresse ou IP à pinguer :"
+
+#: globalPlugins/networkTools.py:577
+#, python-brace-format
+msgid "Ping para {host}, aguarde."
+msgstr "Ping vers {host}, veuillez patienter."
+
+#: globalPlugins/networkTools.py:582 globalPlugins/networkTools.py:604
+#, python-brace-format
+msgid "Sem resposta de {host}."
+msgstr "Aucune réponse de {host}."
+
+#: globalPlugins/networkTools.py:584 globalPlugins/networkTools.py:606
+#, python-brace-format
+msgid "Ping - {host}"
+msgstr "Ping - {host}"
+
+#: globalPlugins/networkTools.py:585 globalPlugins/networkTools.py:607
+msgid "Destino"
+msgstr "Destination"
+
+#: globalPlugins/networkTools.py:586 globalPlugins/networkTools.py:608
+msgid "Latência média"
+msgstr "Latence moyenne"
+
+#: globalPlugins/networkTools.py:586 globalPlugins/networkTools.py:608
+#, python-brace-format
+msgid "{avg} ms"
+msgstr "{avg} ms"
+
+#: globalPlugins/networkTools.py:587
+msgid "Latência mínima"
+msgstr "Latence minimale"
+
+#: globalPlugins/networkTools.py:587 globalPlugins/networkTools.py:588
+#: globalPlugins/networkTools.py:589
+#, python-brace-format
+msgid "{v} ms"
+msgstr "{v} ms"
+
+#: globalPlugins/networkTools.py:588
+msgid "Latência máxima"
+msgstr "Latence maximale"
+
+#: globalPlugins/networkTools.py:589
+msgid "Jitter"
+msgstr "Gigue (Jitter)"
+
+#: globalPlugins/networkTools.py:590 globalPlugins/networkTools.py:609
+msgid "TTL"
+msgstr "TTL"
+
+#: globalPlugins/networkTools.py:591 globalPlugins/networkTools.py:610
+msgid "Perda de pacotes"
+msgstr "Perte de paquets"
+
+#: globalPlugins/networkTools.py:591 globalPlugins/networkTools.py:610
+#, python-brace-format
+msgid "{loss}%"
+msgstr "{loss}%"
+
+#: globalPlugins/networkTools.py:597
+#, python-brace-format
+msgid "Erro ao pingar {host}."
+msgstr "Erreur lors du ping vers {host}."
+
+#: globalPlugins/networkTools.py:616
+msgid "Traceroute"
+msgstr "Traceroute"
+
+#: globalPlugins/networkTools.py:616
+msgid "Endereço de destino:"
+msgstr "Adresse de destination :"
+
+#: globalPlugins/networkTools.py:621
+#, python-brace-format
+msgid "Traceroute para {host}. Bipes a cada salto."
+msgstr "Traceroute vers {host}. Bip à chaque saut."
+
+#: globalPlugins/networkTools.py:640
+msgid "Erro no traceroute."
+msgstr "Erreur de traceroute."
+
+#: globalPlugins/networkTools.py:677
+msgid "Nenhum salto encontrado."
+msgstr "Aucun saut trouvé."
+
+#: globalPlugins/networkTools.py:682
+#, python-brace-format
+msgid "Salto {n}: {ip} - {ms} ms"
+msgstr "Saut {n}: {ip} - {ms} ms"
+
+#: globalPlugins/networkTools.py:685
+#, python-brace-format
+msgid "Salto {n}: sem resposta (roteador não responde a ICMP)"
+msgstr "Saut {n} : pas de réponse (le routeur ne répond pas à l'ICMP)"
+
+#: globalPlugins/networkTools.py:707
+#, python-brace-format
+msgid "Total: {n} saltos"
+msgstr "Total : {n} sauts"
+
+#: globalPlugins/networkTools.py:709
+#, python-brace-format
+msgid "Destino alcançado no salto {n}."
+msgstr "Destination atteinte au saut {n}."
+
+#: globalPlugins/networkTools.py:712
+#, python-brace-format
+msgid "Destino não alcançado: os últimos {n} saltos não responderam."
+msgstr "Destination non atteinte : les {n} derniers sauts n'ont pas répondu."
+
+#: globalPlugins/networkTools.py:715
+msgid "Destino não alcançado dentro do limite de saltos."
+msgstr "Destination non atteinte dans la limite de sauts."
+
+#: globalPlugins/networkTools.py:716
+#, python-brace-format
+msgid "Traceroute - {host}"
+msgstr "Traceroute - {host}"
+
+#: globalPlugins/networkTools.py:721
+msgid "Varrendo rede local com ping, aguarde alguns segundos."
+msgstr ""
+"Analyse du réseau local avec ping, veuillez patienter quelques secondes."
+
+#: globalPlugins/networkTools.py:730
+msgid "Não foi possível detectar a rede local."
+msgstr "Impossible de détecter le réseau local."
+
+#: globalPlugins/networkTools.py:775
+msgid "Nenhum dispositivo encontrado."
+msgstr "Aucun appareil trouvé."
+
+#: globalPlugins/networkTools.py:786
+msgid "Dispositivos na Rede"
+msgstr "Appareils sur le réseau"
+
+#: globalPlugins/networkTools.py:787
+#, python-brace-format
+msgid "Total: {n}"
+msgstr "Total : {n}"
+
+#: globalPlugins/networkTools.py:792
+msgid "Localizar IP"
+msgstr "Localiser une IP"
+
+#: globalPlugins/networkTools.py:792
+msgid "IP para consultar:"
+msgstr "IP à consulter :"
+
+#: globalPlugins/networkTools.py:805
+#, python-brace-format
+msgid "Endereço IP inválido: {ip}"
+msgstr "Adresse IP invalide : {ip}"
+
+#: globalPlugins/networkTools.py:808
+#, python-brace-format
+msgid "Consultando {ip}, aguarde."
+msgstr "Recherche de {ip}, veuillez patienter."
+
+#: globalPlugins/networkTools.py:811
+#, python-brace-format
+msgid "Erro ao consultar {ip}."
+msgstr "Erreur lors de la consultation de {ip}."
+
+#: globalPlugins/networkTools.py:816
+msgid "Resposta inválida."
+msgstr "Réponse invalide."
+
+#: globalPlugins/networkTools.py:819
+#, python-brace-format
+msgid "IP {ip} não encontrado ou privado."
+msgstr "IP {ip} introuvable ou privée."
+
+#: globalPlugins/networkTools.py:821
+#, python-brace-format
+msgid "Whois - {ip}"
+msgstr "Whois - {ip}"
+
+#: globalPlugins/networkTools.py:822 globalPlugins/networkTools.py:873
+#: globalPlugins/networkTools.py:889
+msgid "IP"
+msgstr "IP"
+
+#: globalPlugins/networkTools.py:823
+msgid "País"
+msgstr "Pays"
+
+#: globalPlugins/networkTools.py:824
+msgid "Estado"
+msgstr "Région"
+
+#: globalPlugins/networkTools.py:825
+msgid "Cidade"
+msgstr "Ville"
+
+#: globalPlugins/networkTools.py:826
+msgid "Fuso horário"
+msgstr "Fuseau horaire"
+
+#: globalPlugins/networkTools.py:828
+msgid "Organização"
+msgstr "Organisation"
+
+#: globalPlugins/networkTools.py:829
+msgid "ASN"
+msgstr "ASN"
+
+#: globalPlugins/networkTools.py:835
+msgid "Testando velocidade da internet, isso pode levar alguns segundos."
+msgstr ""
+"Test de la vitesse internet en cours, cela peut prendre quelques secondes."
+
+#: globalPlugins/networkTools.py:847
+msgid "Download"
+msgstr "Téléchargement"
+
+#: globalPlugins/networkTools.py:847 globalPlugins/networkTools.py:848
+msgid "falhou"
+msgstr "échoué"
+
+#: globalPlugins/networkTools.py:848
+msgid "Upload"
+msgstr "Envoi"
+
+#: globalPlugins/networkTools.py:877
+#, python-brace-format
+msgid "Valor inválido em {campo}: {valor}"
+msgstr "Valeur invalide dans {campo} : {valor}"
+
+#: globalPlugins/networkTools.py:885
+#, python-brace-format
+msgid "Aplicando {ip}, aguarde."
+msgstr "Application de {ip}, veuillez patienter."
+
+#: globalPlugins/networkTools.py:888
+msgid "IP Estático OK"
+msgstr "IP statique OK"
+
+#: globalPlugins/networkTools.py:892
+#, python-brace-format
+msgid "Erro: {detail}"
+msgstr "Erreur : {detail}"
+
+#: globalPlugins/networkTools.py:905
+msgid "Revertendo para DHCP, aguarde."
+msgstr "Retour au DHCP, veuillez patienter."
+
+#: globalPlugins/networkTools.py:909
+msgid "DHCP OK"
+msgstr "DHCP OK"
+
+#: globalPlugins/networkTools.py:909
+msgid "IP dinâmico ativado"
+msgstr "IP dynamique activée"
+
+#: globalPlugins/networkTools.py:920
+msgid "Cache DNS limpo"
+msgstr "Cache DNS effacé"
+
+#: globalPlugins/networkTools.py:921
+msgid "IP liberado"
+msgstr "IP libérée"
+
+#: globalPlugins/networkTools.py:922
+msgid "Novo IP solicitado"
+msgstr "Nouvelle IP demandée"
+
+#: globalPlugins/networkTools.py:923
+msgid "Pilha resetada (reinicie o PC)"
+msgstr "Pile réinitialisée (redémarrez le PC)"
+
+#: globalPlugins/networkTools.py:926
+msgid "OK"
+msgstr "OK"
+
+#: globalPlugins/networkTools.py:926
+msgid "FALHA"
+msgstr "ÉCHEC"
+
+#: globalPlugins/networkTools.py:938
+msgid "Monitor desativado."
+msgstr "Moniteur désactivé."
+
+#: globalPlugins/networkTools.py:951
+msgid "Conexão restabelecida."
+msgstr "Connexion rétablie."
+
+#: globalPlugins/networkTools.py:955
+msgid "Aviso: sem conexão no momento."
+msgstr "Avertissement : aucune connexion pour le moment."
+
+#: globalPlugins/networkTools.py:961
+msgid "Monitor ativado. NVDA avisará sobre quedas de rede."
+msgstr "Moniteur activé. NVDA annoncera les pertes de connexion."
+
+#: globalPlugins/networkTools.py:983
+msgid "Consultando portas em escuta, aguarde."
+msgstr "Consultation des ports en écoute, veuillez patienter."
+
+#: globalPlugins/networkTools.py:987
+msgid "Nenhuma porta em escuta encontrada."
+msgstr "Aucun port en écoute trouvé."
+
+#: globalPlugins/networkTools.py:990
+#, python-brace-format
+msgid "{proto} {porta} — processo: {proc} (PID {pid})"
+msgstr "{proto} {porta} — processus : {proc} (PID {pid})"
+
+#: globalPlugins/networkTools.py:994
+#, python-brace-format
+msgid "Total: {n} portas em escuta"
+msgstr "Total : {n} ports en écoute"
+
+#: globalPlugins/networkTools.py:995
+msgid "Portas em Escuta"
+msgstr "Ports en Écoute"
+
+#: globalPlugins/networkTools.py:999
+msgid "Consultando regras de firewall ativas, aguarde."
+msgstr "Consultation des règles de pare-feu actives, veuillez patienter."
+
+#: globalPlugins/networkTools.py:1004
+msgid "Nenhuma regra de firewall ativa encontrada."
+msgstr "Aucune règle de pare-feu active trouvée."
+
+#: globalPlugins/networkTools.py:1010
+msgid "Nome"
+msgstr "Nom"
+
+#: globalPlugins/networkTools.py:1011 globalPlugins/networkTools.py:1117
+msgid "Perfis"
+msgstr "Profils"
+
+#: globalPlugins/networkTools.py:1012 networkToolsLib/dialogs.py:233
+#: networkToolsLib/dialogs.py:312
+msgid "Protocolo"
+msgstr "Protocole"
+
+#: globalPlugins/networkTools.py:1013
+msgid "Porta local"
+msgstr "Port local"
+
+#: globalPlugins/networkTools.py:1014 globalPlugins/networkTools.py:1109
+#: networkToolsLib/dialogs.py:331
+msgid "Ação"
+msgstr "Action"
+
+#: globalPlugins/networkTools.py:1018
+#, python-brace-format
+msgid "Entrada ({n})"
+msgstr "Entrée ({n})"
+
+#: globalPlugins/networkTools.py:1019
+msgid "Nenhuma regra de entrada ativa."
+msgstr "Aucune règle d'entrée active."
+
+#: globalPlugins/networkTools.py:1020
+#, python-brace-format
+msgid "Saída ({n})"
+msgstr "Sortie ({n})"
+
+#: globalPlugins/networkTools.py:1021
+msgid "Nenhuma regra de saída ativa."
+msgstr "Aucune règle de sortie active."
+
+#: globalPlugins/networkTools.py:1023
+#, python-brace-format
+msgid "Total: {n} regras ativas ({entrada} de entrada, {saida} de saída)"
+msgstr "Total : {n} règles actives ({entrada} entrantes, {saida} sortantes)"
+
+#: globalPlugins/networkTools.py:1025
+msgid "Regras de Firewall Ativas"
+msgstr "Règles de Pare-feu Actives"
+
+#: globalPlugins/networkTools.py:1033
+msgid "Criar Regra de Firewall"
+msgstr "Créer une Règle de Pare-feu"
+
+#: globalPlugins/networkTools.py:1052
+msgid "Informe o caminho do programa."
+msgstr "Indiquez le chemin du programme."
+
+#: globalPlugins/networkTools.py:1058 globalPlugins/networkTools.py:1208
+#, python-brace-format
+msgid "Porta inválida: {porta}"
+msgstr "Port invalide : {porta}"
+
+#: globalPlugins/networkTools.py:1067 networkToolsLib/dialogs.py:339
+msgid "Domínio"
+msgstr "Domaine"
+
+#: globalPlugins/networkTools.py:1069 networkToolsLib/dialogs.py:342
+msgid "Privado"
+msgstr "Privé"
+
+#: globalPlugins/networkTools.py:1071 networkToolsLib/dialogs.py:345
+msgid "Público"
+msgstr "Public"
+
+#: globalPlugins/networkTools.py:1076
+msgid "Todos"
+msgstr "Tous"
+
+#: globalPlugins/networkTools.py:1088
+msgid "Confirmar Regra de Entrada"
+msgstr "Confirmer la Règle d'Entrée"
+
+#: globalPlugins/networkTools.py:1093
+msgid "QUALQUER endereço"
+msgstr "N'IMPORTE QUELLE adresse"
+
+#: globalPlugins/networkTools.py:1098
+msgid "Criando regra de firewall, aguarde."
+msgstr "Création de la règle de pare-feu, veuillez patienter."
+
+#: globalPlugins/networkTools.py:1107
+msgid "Regra"
+msgstr "Règle"
+
+#: globalPlugins/networkTools.py:1108 networkToolsLib/dialogs.py:302
+msgid "Direção"
+msgstr "Direction"
+
+#: globalPlugins/networkTools.py:1108 globalPlugins/networkTools.py:1143
+#: globalPlugins/networkTools.py:1161
+msgid "Entrada"
+msgstr "Entrée"
+
+#: globalPlugins/networkTools.py:1108 globalPlugins/networkTools.py:1143
+#: globalPlugins/networkTools.py:1161
+msgid "Saída"
+msgstr "Sortie"
+
+#: globalPlugins/networkTools.py:1109 networkToolsLib/dialogs.py:332
+msgid "Permitir"
+msgstr "Autoriser"
+
+#: globalPlugins/networkTools.py:1109 networkToolsLib/dialogs.py:332
+msgid "Bloquear"
+msgstr "Bloquer"
+
+#: globalPlugins/networkTools.py:1112
+msgid "Programa"
+msgstr "Programme"
+
+#: globalPlugins/networkTools.py:1114 globalPlugins/networkTools.py:1215
+msgid "Porta"
+msgstr "Port"
+
+#: globalPlugins/networkTools.py:1116
+msgid "IP remoto"
+msgstr "IP distante"
+
+#: globalPlugins/networkTools.py:1118
+msgid "Regra criada com sucesso"
+msgstr "Règle créée avec succès"
+
+#: globalPlugins/networkTools.py:1119
+msgid "Regra de Firewall Criada"
+msgstr "Règle de Pare-feu Créée"
+
+#: globalPlugins/networkTools.py:1121
+#, python-brace-format
+msgid "Erro ao criar a regra: {detail}"
+msgstr "Erreur lors de la création de la règle : {detail}"
+
+#: globalPlugins/networkTools.py:1129
+msgid ""
+"Consultando todas as regras de firewall, aguarde. Isso inclui as regras "
+"padrão do Windows, então pode demorar um pouco."
+msgstr ""
+"Vérification de toutes les règles de pare-feu, veuillez patienter. Cela "
+"inclut les règles par défaut de Windows, ce qui peut prendre un certain "
+"temps."
+
+#: globalPlugins/networkTools.py:1139
+msgid "Nenhuma regra de firewall foi encontrada."
+msgstr "Aucune règle de pare-feu trouvée."
+
+#: globalPlugins/networkTools.py:1144
+#, python-brace-format
+msgid "{nome} — {direcao}"
+msgstr "{nome} — {direcao}"
+
+#: globalPlugins/networkTools.py:1147
+msgid "Selecionar Regra para Remover"
+msgstr "Sélectionner une Règle à Supprimer"
+
+#: globalPlugins/networkTools.py:1163
+msgid "Confirmar Remoção de Regra do Sistema"
+msgstr "Confirmer la Suppression d'une Règle Système"
+
+#: globalPlugins/networkTools.py:1173
+msgid "Removendo regra, aguarde."
+msgstr "Suppression de la règle, veuillez patienter."
+
+#: globalPlugins/networkTools.py:1177
+#, python-brace-format
+msgid "Regra removida: {nome}"
+msgstr "Règle supprimée : {nome}"
+
+#: globalPlugins/networkTools.py:1179
+#, python-brace-format
+msgid "Erro ao remover a regra: {detail}"
+msgstr "Erreur lors de la suppression de la règle : {detail}"
+
+#: globalPlugins/networkTools.py:1183
+msgid "Consultando status do firewall, aguarde."
+msgstr "Consultation de l'état du pare-feu, veuillez patienter."
+
+#: globalPlugins/networkTools.py:1187
+msgid "Não foi possível consultar o status do firewall."
+msgstr "Impossible de consulter l'état du pare-feu."
+
+#: globalPlugins/networkTools.py:1190
+#, python-brace-format
+msgid "{perfil}: {status}"
+msgstr "{perfil} : {status}"
+
+#: globalPlugins/networkTools.py:1192
+msgid "Ligado"
+msgstr "Activé"
+
+#: globalPlugins/networkTools.py:1192
+msgid "Desligado"
+msgstr "Désactivé"
+
+#: globalPlugins/networkTools.py:1211
+#, python-brace-format
+msgid "Testando a porta {porta}/{protocolo} localmente, aguarde."
+msgstr "Test du port {porta}/{protocolo} en local, veuillez patienter."
+
+#: globalPlugins/networkTools.py:1216
+msgid "Algo escutando agora"
+msgstr "Quelque chose est à l'écoute actuellement"
+
+#: globalPlugins/networkTools.py:1216 globalPlugins/networkTools.py:1222
+msgid "Sim"
+msgstr "Oui"
+
+#: globalPlugins/networkTools.py:1216
+msgid "Não"
+msgstr "Non"
+
+#: globalPlugins/networkTools.py:1219
+msgid "Processo"
+msgstr "Processus"
+
+#: globalPlugins/networkTools.py:1219
+#, python-brace-format
+msgid "{proc} (PID {pid})"
+msgstr "{proc} (PID {pid})"
+
+#: globalPlugins/networkTools.py:1221
+msgid "Regra de firewall permitindo"
+msgstr "Règle de pare-feu l'autorisant"
+
+#: globalPlugins/networkTools.py:1222
+msgid "Não encontrada"
+msgstr "Non trouvée"
+
+#: globalPlugins/networkTools.py:1225
+msgid "Nome da regra"
+msgstr "Nom de la règle"
+
+#: globalPlugins/networkTools.py:1227 networkToolsLib/dialogs.py:297
+msgid "Tipo de regra"
+msgstr "Type de règle"
+
+#: globalPlugins/networkTools.py:1228
+msgid "Específica desta porta"
+msgstr "Spécifique à ce port"
+
+#: globalPlugins/networkTools.py:1229
+msgid "Genérica de programa (libera qualquer porta)"
+msgstr "Règle générique de programme (ouvre n'importe quel port)"
+
+#: globalPlugins/networkTools.py:1233
+msgid "Conexão local de teste"
+msgstr "Connexion de test locale"
+
+#: globalPlugins/networkTools.py:1234
+msgid "Bem-sucedida"
+msgstr "Réussie"
+
+#: globalPlugins/networkTools.py:1234
+msgid "Falhou"
+msgstr "Échouée"
+
+#: globalPlugins/networkTools.py:1241
+#, python-brace-format
+msgid ""
+"A porta {porta} está entre as que a maioria dos provedores de internet "
+"bloqueia por padrão, independente de qualquer configuração sua. Mesmo um "
+"resultado local positivo aqui não garante acesso vindo de fora da sua rede."
+msgstr ""
+"Le port {porta} fait partie de ceux que la plupart des fournisseurs d'accès "
+"à Internet bloquent par défaut, indépendamment de votre propre "
+"configuration. Même un résultat local positif ici ne garantit pas l'accès "
+"depuis l'extérieur de votre réseau."
+
+#: globalPlugins/networkTools.py:1247
+msgid "Teste de Porta Local"
+msgstr "Test de Port Local"
+
+#: networkToolsLib/dialogs.py:23 networkToolsLib/dialogs.py:197
+#: networkToolsLib/dialogs.py:236 networkToolsLib/dialogs.py:364
+msgid "&Confirmar"
+msgstr "&Confirmer"
+
+#: networkToolsLib/dialogs.py:26 networkToolsLib/dialogs.py:151
+#: networkToolsLib/dialogs.py:199 networkToolsLib/dialogs.py:238
+#: networkToolsLib/dialogs.py:366
+msgid "Cancelar"
+msgstr "Annuler"
+
+#: networkToolsLib/dialogs.py:62 networkToolsLib/dialogs.py:111
+#: networkToolsLib/dialogs.py:426
+msgid "&Fechar"
+msgstr "&Fermer"
+
+#: networkToolsLib/dialogs.py:134
+msgid "Configurar IP Estático"
+msgstr "Configurer une IP statique"
+
+#: networkToolsLib/dialogs.py:143
+msgid "Endereço IPv4:"
+msgstr "Adresse IPv4 :"
+
+#: networkToolsLib/dialogs.py:145
+msgid "Máscara Sub-rede:"
+msgstr "Masque de sous-réseau :"
+
+#: networkToolsLib/dialogs.py:147
+msgid "Gateway Padrão:"
+msgstr "Passerelle par défaut :"
+
+#: networkToolsLib/dialogs.py:149
+msgid "&Aplicar"
+msgstr "&Appliquer"
+
+#: networkToolsLib/dialogs.py:194
+msgid "DNS primário:"
+msgstr "DNS primaire :"
+
+#: networkToolsLib/dialogs.py:196
+msgid "DNS secundário (opcional):"
+msgstr "DNS secondaire (facultatif) :"
+
+#: networkToolsLib/dialogs.py:228
+msgid "Número da porta (1 a 65535):"
+msgstr "Numéro du port (de 1 à 65535) :"
+
+#: networkToolsLib/dialogs.py:298
+msgid "Baseada em Porta"
+msgstr "Basée sur le Port"
+
+#: networkToolsLib/dialogs.py:298
+msgid "Baseada em Programa"
+msgstr "Basée sur le Programme"
+
+#: networkToolsLib/dialogs.py:303
+msgid "Entrada (tráfego chegando)"
+msgstr "Entrée (trafic entrant)"
+
+#: networkToolsLib/dialogs.py:303
+msgid "Saída (tráfego saindo)"
+msgstr "Sortie (trafic sortant)"
+
+#: networkToolsLib/dialogs.py:307
+msgid "Porta (se a regra for baseada em porta):"
+msgstr "Port (si la règle est basée sur le port) :"
+
+#: networkToolsLib/dialogs.py:318
+msgid "Caminho completo do programa (se a regra for baseada em programa):"
+msgstr ""
+"Chemin complet du programme (si la règle est basée sur le programme) :"
+
+#: networkToolsLib/dialogs.py:325
+msgid "Endereços IP remotos (opcional, ex.: 192.168.1.10 ou 10.0.0.0/24):"
+msgstr ""
+"Adresses IP distantes (facultatif, ex. : 192.168.1.10 ou 10.0.0.0/24) :"
+
+#: networkToolsLib/dialogs.py:336
+msgid "Perfis de Rede"
+msgstr "Profils Réseau"
+
+#: networkToolsLib/dialogs.py:353
+msgid "Nome da regra:"
+msgstr "Nom de la règle :"
+
+#: networkToolsLib/dialogs.py:359
+msgid "Descrição (opcional):"
+msgstr "Description (facultatif) :"
+
+#: networkToolsLib/dialogs.py:417
+msgid "Setas para navegar, Enter para ativar, Escape para fechar:"
+msgstr "Flèches pour naviguer, Entrée pour activer, Échap pour fermer :"
+
+#: networkToolsLib/sysutils.py:70 networkToolsLib/sysutils.py:93
+msgid "Tempo esgotado."
+msgstr "Délai dépassé."
+
+#: globalPlugins/networkTools.py:0
+msgid "IPv6 (submenu)"
+msgstr "IPv6 (sous-menu)"
+
+#: globalPlugins/networkTools.py:0
+msgid "Teste de Conectividade IPv6"
+msgstr "Test de Connectivité IPv6"
+
+#: globalPlugins/networkTools.py:0
+msgid "Teste de DNS IPv6"
+msgstr "Test de DNS IPv6"
+
+#: globalPlugins/networkTools.py:0
+msgid "Diagnóstico IPv6 Completo"
+msgstr "Diagnostic IPv6 Complet"
+
+#: globalPlugins/networkTools.py:0
+msgid "IPv6"
+msgstr "IPv6"
+
+#: globalPlugins/networkTools.py:0
+msgid "Testando conectividade IPv6, aguarde."
+msgstr "Test de la connectivité IPv6, veuillez patienter."
+
+#: globalPlugins/networkTools.py:0
+msgid "Nenhum endereço IPv6 encontrado nesta interface."
+msgstr "Aucune adresse IPv6 trouvée sur cette interface."
+
+#: globalPlugins/networkTools.py:0
+msgid "IPv6 funcionando: conexão de saída para a internet confirmada."
+msgstr "IPv6 fonctionnel : connexion sortante vers internet confirmée."
+
+#: globalPlugins/networkTools.py:0
+msgid "IPv6 presente, mas sem conexão."
+msgstr "IPv6 présent, mais sans connexion."
+
+#: globalPlugins/networkTools.py:0
+msgid "Endereço IPv6 global"
+msgstr "Adresse IPv6 globale"
+
+#: globalPlugins/networkTools.py:0
+msgid "nenhum"
+msgstr "aucune"
+
+#: globalPlugins/networkTools.py:0
+msgid "Endereço IPv6 local (link-local)"
+msgstr "Adresse IPv6 locale (link-local)"
+
+#: globalPlugins/networkTools.py:0
+msgid "Testado contra"
+msgstr "Testé contre"
+
+#: globalPlugins/networkTools.py:0
+msgid "nenhum servidor respondeu"
+msgstr "aucun serveur n'a répondu"
+
+#: globalPlugins/networkTools.py:0
+msgid "Resultado"
+msgstr "Résultat"
+
+#: globalPlugins/networkTools.py:0
+msgid "Domínio para testar:"
+msgstr "Domaine à tester :"
+
+#: globalPlugins/networkTools.py:0
+msgid "Testando DNS IPv6 para {host}, aguarde."
+msgstr "Test du DNS IPv6 pour {host}, veuillez patienter."
+
+#: globalPlugins/networkTools.py:0
+msgid "O DNS não retornou nenhum endereço IPv6 (AAAA) para este domínio."
+msgstr "Le DNS n'a renvoyé aucune adresse IPv6 (AAAA) pour ce domaine."
+
+#: globalPlugins/networkTools.py:0
+msgid "DNS IPv6 ok, conexão IPv6 funcionando."
+msgstr "DNS IPv6 ok, connexion IPv6 fonctionnelle."
+
+#: globalPlugins/networkTools.py:0
+msgid "DNS IPv6 ok, conexão IPv6 quebrada."
+msgstr "DNS IPv6 ok, connexion IPv6 rompue."
+
+#: globalPlugins/networkTools.py:0
+msgid "Endereço IPv6 resolvido"
+msgstr "Adresse IPv6 résolue"
+
+#: globalPlugins/networkTools.py:0
+msgid "Executando diagnóstico completo de IPv6, aguarde."
+msgstr "Exécution du diagnostic IPv6 complet, veuillez patienter."
+
+#: globalPlugins/networkTools.py:0
+msgid "IPv6 funcionando."
+msgstr "IPv6 fonctionnel."
+
+#: globalPlugins/networkTools.py:0
+msgid "IPv6 presente, mas sem internet."
+msgstr "IPv6 présent, mais sans internet."
+
+#: globalPlugins/networkTools.py:0
+msgid "Roteador não entrega IPv6."
+msgstr "Le routeur ne fournit pas l'IPv6."
+
+#: globalPlugins/networkTools.py:0
+msgid "Provedor não oferece IPv6."
+msgstr "Le fournisseur n'offre pas l'IPv6."
+
+#: globalPlugins/networkTools.py:0
+msgid "Rota padrão IPv6 na rede"
+msgstr "Route par défaut IPv6 sur le réseau"
+
+#: globalPlugins/networkTools.py:0
+msgid "sim"
+msgstr "oui"
+
+#: globalPlugins/networkTools.py:0
+msgid "não"
+msgstr "non"
+
+#: globalPlugins/networkTools.py:0
+msgid "Conectividade de saída"
+msgstr "Connectivité sortante"
+
+#: globalPlugins/networkTools.py:0
+msgid "confirmada"
+msgstr "confirmée"
+
+#: globalPlugins/networkTools.py:0
+msgid "Conclusão"
+msgstr "Conclusion"
+
+#: globalPlugins/networkTools.py:0
+msgid "DNS (submenu)"
+msgstr "DNS (sous-menu)"
+
+#: globalPlugins/networkTools.py:0
+msgid "Este adaptador já está em modo dinâmico (DHCP)."
+msgstr "Cet adaptateur est déjà en mode dynamique (DHCP)."
+
+#: globalPlugins/networkTools.py:0
+msgid "Este adaptador já está configurado com este IP estático."
+msgstr "Cet adaptateur est déjà configuré avec cette adresse IP statique."
+
+#: globalPlugins/networkTools.py:0
+msgid "Pequeno (mais rápido, menos preciso) - 5 MB download, 2 MB upload"
+msgstr "Petit (plus rapide, moins précis) - 5 Mo téléchargement, 2 Mo envoi"
+
+#: globalPlugins/networkTools.py:0
+msgid "Médio, padrão - 25 MB download, 5 MB upload"
+msgstr "Moyen, par défaut - 25 Mo téléchargement, 5 Mo envoi"
+
+#: globalPlugins/networkTools.py:0
+msgid "Número de pacotes (deixe em branco para usar o padrão: {default}):"
+msgstr ""
+"Nombre de paquets (laissez vide pour utiliser la valeur par défaut : "
+"{default}) :"
+
+#: globalPlugins/networkTools.py:0
+msgid "Limite de saltos (deixe em branco para usar o padrão: {default}):"
+msgstr ""
+"Limite de sauts (laissez vide pour utiliser la valeur par défaut : "
+"{default}) :"
+
+#: globalPlugins/networkTools.py:0
+msgid "Interface de rede definida como automática."
+msgstr "Interface réseau définie sur automatique."
+
+#: globalPlugins/networkTools.py:0
+msgid "Interface de rede definida como {name}."
+msgstr "Interface réseau définie sur {name}."
+
+#: globalPlugins/networkTools.py:0
+msgid "Adaptador"
+msgstr "Adaptateur"
+
+#: networkToolsLib/dialogs.py:0
+msgid "Automático"
+msgstr "Automatique"
+
+#: networkToolsLib/dialogs.py:0
+msgid "Interface de Rede (Ctrl+Tab para alternar):"
+msgstr "Interface Réseau (Ctrl+Tab pour changer) :"
+
+#: globalPlugins/networkTools.py:0
+msgid "Excelente"
+msgstr "Excellent"
+
+#: globalPlugins/networkTools.py:0
+msgid "Estável"
+msgstr "Stable"
+
+#: globalPlugins/networkTools.py:0
+msgid "Instável"
+msgstr "Instable"
+
+#: globalPlugins/networkTools.py:0
+msgid "não determinado"
+msgstr "non déterminé"
+
+#: globalPlugins/networkTools.py:0
+msgid "IP de destino"
+msgstr "IP de destination"
+
+#: globalPlugins/networkTools.py:0
+msgid "Pacotes enviados"
+msgstr "Paquets envoyés"
+
+#: globalPlugins/networkTools.py:0
+msgid "Pacotes recebidos"
+msgstr "Paquets reçus"
+
+#: globalPlugins/networkTools.py:0
+msgid "Desvio padrão"
+msgstr "Écart type"
+
+#: globalPlugins/networkTools.py:0
+msgid "A interface selecionada ({iface}) não é um adaptador Wi-Fi."
+msgstr "L'interface sélectionnée ({iface}) n'est pas un adaptateur Wi-Fi."
+
+#: globalPlugins/networkTools.py:0
+msgid "motivo desconhecido"
+msgstr "raison inconnue"
+
+#: globalPlugins/networkTools.py:0
+msgid "Não foi possível medir a velocidade da internet ({detail})."
+msgstr "Impossible de mesurer la vitesse d'internet ({detail})."
+
+#: globalPlugins/networkTools.py:0
+msgid "falhou ({detail})"
+msgstr "échec ({detail})"
+
+#: globalPlugins/networkTools.py:0
+msgid ""
+"A interface selecionada ({iface}) não tem endereço IP configurado no "
+"momento."
+msgstr ""
+"L'interface sélectionnée ({iface}) n'a actuellement aucune configuration IP."
+
+#: globalPlugins/networkTools.py:0
+msgid "{v} Mbps"
+msgstr "{v} Mbps"
+
+#: globalPlugins/networkTools.py:722
+msgid ""
+"O Windows está bloqueando o acesso às informações de Wi-Fi porque o serviço "
+"de Localização do sistema está desativado. Abra as Configurações, vá em "
+"Privacidade e segurança, Localização, e ative o serviço de Localização. "
+"Depois tente novamente."
+msgstr ""
+"Windows bloque l'accès aux informations Wi-Fi car le service de localisation"
+" du système est désactivé. Ouvrez les Paramètres, allez dans Confidentialité"
+" et sécurité, Localisation, puis activez le service de localisation. "
+"Réessayez ensuite."
+
+msgid " (e {ip} como secundário)"
+msgstr " (et {ip} comme secondaire)"
+
+msgid " (em uso agora)"
+msgstr " (actuellement utilisé)"
+
+msgid "&Iniciar o Monitor de Conexão automaticamente com o NVDA"
+msgstr "&Démarrer le Moniteur de connexion automatiquement avec NVDA"
+
+msgid "&Não, manter atual"
+msgstr "&Non, conserver l’actuel"
+
+msgid "&Sim, trocar"
+msgstr "&Oui, changer"
+
+msgid "&Tamanho padrão do Teste de Velocidade:"
+msgstr "&Taille par défaut du Test de Vitesse :"
+
+msgid "Aguardando a primeira verificação..."
+msgstr "En attente de la première vérification..."
+
+msgid "Aplicando DNS, aguarde."
+msgstr "Application du DNS, veuillez patienter."
+
+msgid "Atenção: conexão de rede perdida."
+msgstr "Attention : connexion réseau perdue."
+
+msgid ""
+"Atenção: conexão perdida - o roteador também não está respondendo (parece "
+"ser um problema na rede local)."
+msgstr ""
+"Attention : connexion perdue - le routeur ne répond pas non plus (cela "
+"ressemble à un problème de réseau local)."
+
+msgid ""
+"Aviso: sem conexão no momento - o roteador também não está respondendo "
+"(parece ser um problema na rede local)."
+msgstr ""
+"Avertissement : aucune connexion pour le moment - le routeur ne répond pas "
+"non plus (cela ressemble à un problème de réseau local)."
+
+msgid "Buscar Melhor DNS"
+msgstr "Rechercher le Meilleur DNS"
+
+msgid "Conectado ({ms} ms de latência do DNS/internet na última verificação)"
+msgstr ""
+"Connecté (latence DNS/internet de {ms} ms lors de la dernière vérification)"
+
+msgid "Conectado. Latência média do DNS/internet: {ms} ms."
+msgstr "Connecté. Latence moyenne DNS/internet : {ms} ms."
+
+msgid "Conexão"
+msgstr "Connexion"
+
+msgid "Conexão de rede perdida (há {dur})."
+msgstr "Connexion réseau perdue (depuis {dur})."
+
+msgid "Conexão restabelecida após {dur} sem conexão."
+msgstr "Connexion rétablie après {dur} sans connexion."
+
+msgid "DNS registrado novamente"
+msgstr "DNS réenregistré"
+
+msgid ""
+"Deseja definir {ip_melhor} ({provedor}) como seu novo servidor DNS "
+"primário{sec_txt}?"
+msgstr ""
+"Voulez-vous définir {ip_melhor} ({provedor}) comme votre nouveau serveur DNS"
+" principal{sec_txt} ?"
+
+msgid "Desligar Monitor de Conexão (está ativo)"
+msgstr "Désactiver le Moniteur de connexion (actuellement actif)"
+
+msgid "Erro ao aplicar a configuração: {detail}"
+msgstr "Erreur lors de l'application de la configuration : {detail}"
+
+msgid "Executando, aguarde."
+msgstr "Exécution en cours, veuillez patienter."
+
+msgid "Fala o estado atual da conexão de internet"
+msgstr "Annonce l'état actuel de la connexion internet"
+
+msgid "I&ntervalo de verificação do Monitor (segundos):"
+msgstr "&Intervalle de vérification du Moniteur (secondes) :"
+
+msgid "Latência média (DNS/internet)"
+msgstr "Latence moyenne (DNS/internet)"
+
+msgid "Latência mínima / máxima (DNS/internet)"
+msgstr "Latence minimale / maximale (DNS/internet)"
+
+msgid "Ligar Monitor de Conexão (está desligado)"
+msgstr "Activer le Moniteur de connexion (actuellement désactivé)"
+
+msgid "Limite padrão de &saltos do Traceroute:"
+msgstr "Limite de &sauts par défaut pour Traceroute :"
+
+msgid "Limpar Cache DNS"
+msgstr "Vider le Cache DNS"
+
+msgid "Limpar Cache DNS (Admin)"
+msgstr "Vider le Cache DNS (Admin)"
+
+msgid "Melhor DNS Aplicado"
+msgstr "Meilleur DNS Appliqué"
+
+msgid "Melhor DNS Encontrado"
+msgstr "Meilleur DNS Trouvé"
+
+msgid "Monitor ativo, ainda aguardando a primeira verificação."
+msgstr "Moniteur actif, en attente de la première vérification."
+
+msgid "Monitor de Conexão"
+msgstr "Moniteur de connexion"
+
+msgid "Monitor de Conexão (submenu)"
+msgstr "Moniteur de connexion (sous-menu)"
+
+msgid ""
+"Nenhum dos servidores DNS testados respondeu. Verifique sua conexão com a "
+"internet."
+msgstr ""
+"Aucun des serveurs DNS testés n'a répondu. Vérifiez votre connexion "
+"internet."
+
+msgid "Network Tools"
+msgstr "Network Tools"
+
+msgid "Não foi possível determinar seu DNS atual."
+msgstr "Impossible de déterminer votre DNS actuel."
+
+msgid "O monitor de conexão está desligado no momento."
+msgstr "Le moniteur de connexion est actuellement désactivé."
+
+msgid "O roteador também não está respondendo."
+msgstr "Le routeur ne répond pas non plus."
+
+msgid "Pilha TCP/IP resetada (reinicie o computador)"
+msgstr "Pile TCP/IP réinitialisée (redémarrez l'ordinateur)"
+
+msgid "Pilha Winsock resetada (reinicie o computador)"
+msgstr "Pile Winsock réinitialisée (redémarrez l'ordinateur)"
+
+msgid "Quantidade padrão de pacotes do &Ping:"
+msgstr "Nombre de paquets &Ping par défaut :"
+
+msgid "Ranking dos servidores testados (mais rápido primeiro):"
+msgstr "Classement des serveurs testés (le plus rapide en premier) :"
+
+msgid "Registrar DNS Novamente"
+msgstr "Réenregistrer le DNS"
+
+msgid "Registrar DNS Novamente (Admin)"
+msgstr "Réenregistrer le DNS (Admin)"
+
+msgid "Renovar IP"
+msgstr "Renouveler l'IP"
+
+msgid "Renovar IP (Admin)"
+msgstr "Renouveler l'IP (Admin)"
+
+msgid "Reparo Completo"
+msgstr "Réparation Complète"
+
+msgid "Reparo Completo (Admin)"
+msgstr "Réparation Complète (Admin)"
+
+msgid "Reparo e Limpeza DNS"
+msgstr "Réparation et Nettoyage DNS"
+
+msgid "Reparo e Limpeza DNS (submenu)"
+msgstr "Réparation et Nettoyage DNS (sous-menu)"
+
+msgid "Resetar Pilha TCP/IP"
+msgstr "Réinitialiser la Pile TCP/IP"
+
+msgid "Resetar Pilha TCP/IP (Admin)"
+msgstr "Réinitialiser la Pile TCP/IP (Admin)"
+
+msgid "Resetar Pilha Winsock"
+msgstr "Réinitialiser la Pile Winsock"
+
+msgid "Resetar Pilha Winsock (Admin)"
+msgstr "Réinitialiser la Pile Winsock (Admin)"
+
+msgid "Roteador testado (rede local)"
+msgstr "Routeur testé (réseau local)"
+
+msgid "Sem conexão há {dur}"
+msgstr "Sans connexion depuis {dur}"
+
+msgid "Servidor testado (internet)"
+msgstr "Serveur testé (internet)"
+
+msgid ""
+"Seu DNS atual ({ip} - {provedor}) já é o mais rápido entre os {n} servidores"
+" testados, com {ms} ms de latência. Nenhuma alteração é necessária."
+msgstr ""
+"Votre DNS actuel ({ip} - {provedor}) est déjà le plus rapide parmi les {n} "
+"serveurs testés, avec {ms} ms de latence. Aucun changement n'est nécessaire."
+
+msgid "Seu DNS atual ({ip}) não respondeu dentro do tempo limite."
+msgstr "Votre DNS actuel ({ip}) n'a pas répondu dans le délai imparti."
+
+msgid "Seu DNS atual é {ip} ({ms} ms)."
+msgstr "Votre DNS actuel est {ip} ({ms} ms)."
+
+msgid "Status do Monitor de Conexão"
+msgstr "État du Moniteur de connexion"
+
+msgid "Tempo limite por servidor na Busca de Melhor &DNS (segundos):"
+msgstr ""
+"Délai d'expiration par serveur pour la &Recherche du Meilleur DNS (secondes)"
+" :"
+
+msgid "Tempo total sem conexão"
+msgstr "Temps total sans connexion"
+
+msgid "Ver Status do Monitor"
+msgstr "Voir l'État du Moniteur"
+
+msgid "Verificações realizadas"
+msgstr "Vérifications effectuées"
+
+msgid "ainda não verificou"
+msgstr "pas encore vérifié"
+
+msgid "desconhecido"
+msgstr "inconnu"
+
+msgid "há {dur}"
+msgstr "il y a {dur}"
+
+msgid "não definido"
+msgstr "non défini"
+
+msgid "o roteador também não está respondendo (problema na rede local)"
+msgstr "le routeur ne répond pas non plus (problème de réseau local)"
+
+msgid "roteador não detectado"
+msgstr "routeur non détecté"
+
+msgid "sem dados ainda"
+msgstr "pas encore de données"
+
+msgid "{h} h"
+msgstr "{h} h"
+
+msgid "{h} h {m} min"
+msgstr "{h} h {m} min"
+
+msgid "{min} ms / {max} ms"
+msgstr "{min} ms / {max} ms"
+
+msgid "{m} min"
+msgstr "{m} min"
+
+msgid "{m} min {s} s"
+msgstr "{m} min {s} s"
+
+msgid "{pct}%"
+msgstr "{pct} %"
+
+msgid "{s} s"
+msgstr "{s} s"
+
+msgid "Última verificação"
+msgstr "Dernière vérification"
+
+msgid "✔ Aplicado com sucesso"
+msgstr "✔ Appliqué avec succès"
+
+msgid "Jitter (DNS/internet)"
+msgstr "Gigue (DNS/internet)"
+
+msgid "{j} ms (desvio padrão: {std} ms)"
+msgstr "{j} ms (écart type : {std} ms)"
+
+msgid "Bytes recebidos"
+msgstr "Octets reçus"
+
+msgid "Diagnóstico Avançado do Adaptador"
+msgstr "Diagnostic Avancé de l'Adaptateur"
+
+msgid "Métrica de rota"
+msgstr "Métrique de route"
+
+msgid "Pacotes enviados com erro"
+msgstr "Paquets envoyés avec erreurs"
+
+msgid "MTU"
+msgstr "MTU"
+
+msgid "Pacotes recebidos com erro"
+msgstr "Paquets reçus avec erreurs"
+
+msgid "Bytes enviados"
+msgstr "Octets envoyés"
+
+msgid "Pacotes enviados descartados"
+msgstr "Paquets envoyés rejetés"
+
+msgid "não disponível"
+msgstr "non disponible"
+
+msgid ""
+"Consultando diagnóstico avançado via PowerShell, aguarde (pode levar alguns "
+"segundos na primeira vez)."
+msgstr ""
+"Consultation du diagnostic avancé via PowerShell, veuillez patienter (peut "
+"prendre quelques secondes la première fois)."
+
+msgid "Estado da conexão"
+msgstr "État de la connexion"
+
+msgid ""
+"Não foi possível obter o diagnóstico avançado. O PowerShell pode não estar "
+"disponível neste computador (às vezes bloqueado por política do sistema) ou "
+"a consulta falhou. O restante do Network Tools continua funcionando "
+"normalmente sem ele."
+msgstr ""
+"Impossible d'obtenir le diagnostic avancé. PowerShell n'est peut-être pas "
+"disponible sur cet ordinateur (parfois bloqué par une stratégie système) ou "
+"la requête a échoué. Le reste de Network Tools continue de fonctionner "
+"normalement sans lui."
+
+msgid "Descrição do adaptador"
+msgstr "Description de l'adaptateur"
+
+msgid "Pacotes recebidos descartados"
+msgstr "Paquets reçus rejetés"
+
+msgid "Diagnóstico Avançado do Adaptador (PowerShell)"
+msgstr "Diagnostic Avancé de l'Adaptateur (PowerShell)"
+
+msgid "Ping TCP - {host}:{porta}"
+msgstr "Ping TCP - {host}:{porta}"
+
+msgid "Porta TCP (opcional - deixe em branco para ping ICMP normal):"
+msgstr "Port TCP (facultatif - laisser vide pour un ping ICMP normal) :"
+
+msgid ""
+"Porta inválida - use um número entre 1 e 65535, ou deixe o campo em branco "
+"para ping ICMP normal."
+msgstr ""
+"Port invalide - utilisez un nombre entre 1 et 65535, ou laissez le champ "
+"vide pour un ping ICMP normal."
+
+msgid "Sem resposta de {host} na porta {porta}."
+msgstr "Aucune réponse de {host} sur le port {porta}."
+
+msgid "Testando porta TCP {porta} de {host}, aguarde."
+msgstr "Test du port TCP {porta} de {host}, veuillez patienter."
+
+msgid ""
+"Conectado. Latência média de {iface}: {gw} ms. Latência média do "
+"DNS/internet: {dns} ms."
+msgstr ""
+"Connecté. Latence moyenne de {iface} : {gw} ms. Latence moyenne DNS/internet"
+" : {dns} ms."
+
+msgid "Jitter ({iface})"
+msgstr "Gigue ({iface})"
+
+msgid "Latência média ({iface} - roteador)"
+msgstr "Latence moyenne ({iface} - routeur)"
+
+msgid "Latência mínima / máxima ({iface})"
+msgstr "Latence minimale / maximale ({iface})"
+
+msgid "adaptador de rede"
+msgstr "adaptateur réseau"
+
+msgid ""
+"Apesar da velocidade medida ser boa, sua conexão parece instável ({motivos})"
+" - isso pode causar travamentos em chamadas de voz/vídeo e jogos online, "
+"mesmo com download/upload rápidos."
+msgstr ""
+"Bien que la vitesse mesurée soit bonne, votre connexion semble instable "
+"({motivos}) - cela peut provoquer des coupures lors d'appels vocaux/vidéo et"
+" de jeux en ligne, même avec un téléchargement/envoi rapides."
+
+msgid "Datacenter do teste"
+msgstr "Centre de données du test"
+
+msgid "Diagnóstico"
+msgstr "Diagnostic"
+
+msgid "IP público usado no teste"
+msgstr "IP publique utilisée pour le test"
+
+msgid "Perda de pacotes (20 pacotes para {host})"
+msgstr "Perte de paquets (20 paquets vers {host})"
+
+msgid "jitter de {j} ms"
+msgstr "gigue de {j} ms"
+
+msgid "não foi possível medir"
+msgstr "impossible de mesurer"
+
+msgid "perda de pacotes de {pct}%"
+msgstr "perte de paquets de {pct} %"
+
+msgid "Metadados do Cloudflare"
+msgstr "Métadonnées Cloudflare"
+
+msgid "não disponíveis ({detail})"
+msgstr "non disponibles ({detail})"
+
+msgid "Atualizar Base de Fabricantes Completa"
+msgstr "Mettre à Jour la Base de Données Complète des Fabricants"
+
+msgid "Não foi possível baixar a base de fabricantes ({erro})."
+msgstr "Impossible de télécharger la base de données des fabricants ({erro})."
+
+msgid "Varredura de Dispositivos (submenu)"
+msgstr "Analyse d'Appareils (sous-menu)"
+
+msgid "Ainda não existe nenhuma base local baixada."
+msgstr "Aucune base de données locale n'a encore été téléchargée."
+
+msgid "Já existe uma base local, baixada em {data}, com {n} fabricantes."
+msgstr ""
+"Une base de données locale existe déjà, téléchargée le {data}, avec {n} "
+"fabricants."
+
+msgid ""
+"Base de fabricantes atualizada com sucesso - {n} fabricantes disponíveis. A "
+"Varredura de Dispositivos já vai usar ela a partir de agora."
+msgstr ""
+"Base de données des fabricants mise à jour avec succès - {n} fabricants "
+"disponibles. L'Analyse d'Appareils l'utilisera désormais automatiquement."
+
+msgid ""
+"A base de fabricantes já estava atualizada - não foi necessário baixar de "
+"novo."
+msgstr ""
+"La base de données des fabricants était déjà à jour - pas besoin de la "
+"retélécharger."
+
+msgid "Verificando base de fabricantes, aguarde."
+msgstr ""
+"Vérification de la base de données des fabricants, veuillez patienter."
+
+msgid ""
+"Grande, mais preciso em conexões rápidas - 200 MB download, 80 MB upload (4 "
+"conexões paralelas)"
+msgstr ""
+"Grand, plus précis sur les connexions rapides - 200 Mo téléchargement, 80 Mo"
+" envoi (4 connexions parallèles)"
+
+msgid ", jitter {j} ms, perda {p}%"
+msgstr ", gigue {j} ms, perte {p}%"
+
+msgid "Conexões paralelas no preset &Grande do Teste de Velocidade:"
+msgstr "Connexions parallèles dans le préréglage &Grand du Test de Vitesse :"
+
+msgid "Consultas por servidor na Busca de Melhor D&NS (estabilidade):"
+msgstr "Requêtes par serveur dans la Recherche du Meilleur D&NS (stabilité) :"
+
+msgid ""
+"Seu DNS atual ({ip} - {provedor}) já é o mais rápido e estável entre os {n} "
+"servidores testados, com {ms} ms de latência e {j} ms de jitter. Nenhuma "
+"alteração é necessária."
+msgstr ""
+"Votre DNS actuel ({ip} - {provedor}) est déjà le plus rapide et le plus "
+"stable parmi les {n} serveurs testés, avec {ms} ms de latence et {j} ms de "
+"gigue. Aucun changement n'est nécessaire."
+
+msgid "Conexões paralelas usadas"
+msgstr "Connexions parallèles utilisées"
+
+msgid "Dados solicitados no teste (download / upload)"
+msgstr "Données demandées dans le test (téléchargement / envoi)"
+
+msgid "{down} MB / {up} MB"
+msgstr "{down} Mo / {up} Mo"
+
+msgid ""
+"A regra \"{nome}\" ({direcao}) não foi criada pelo Network Tools - removê-la"
+" pode afetar outro programa ou uma exceção do sistema. Continuar mesmo "
+"assim?"
+msgstr ""
+"La règle « {nome} » ({direcao}) n'a pas été créée par Network Tools - la "
+"supprimer peut affecter un autre programme ou une exception système. "
+"Continuer quand même ?"
+
+msgid ""
+"DNS {ip} não respondeu pela porta 53 (provável bloqueio do roteador ou "
+"provedor). Ativar Modo Seguro (DNS via HTTPS, porta 443)?"
+msgstr ""
+"Le DNS {ip} n'a pas répondu sur le port 53 (probablement bloqué par le "
+"routeur ou le FAI). Activer le Mode Sécurisé (DNS sur HTTPS, port 443) ?"
+
+msgid ""
+"Permite conexões de ENTRADA em {alvo}, vindas de {escopo}, até remover a "
+"regra depois. Continuar?"
+msgstr ""
+"Autorise les connexions ENTRANTES vers {alvo}, depuis {escopo}, jusqu'à la "
+"suppression ultérieure de la règle. Continuer ?"
+
+msgid ""
+"Reseta a pilha de sockets do Windows - exige reiniciar o computador. "
+"Continuar?"
+msgstr ""
+"Réinitialise la pile de sockets Windows - nécessite un redémarrage de "
+"l'ordinateur. Continuer ?"
+
+msgid ""
+"Reseta toda a configuração TCP/IP para os padrões de fábrica - exige "
+"reiniciar o computador. Continuar?"
+msgstr ""
+"Réinitialise toute la configuration TCP/IP aux paramètres d'usine - "
+"nécessite un redémarrage de l'ordinateur. Continuer ?"
+
+msgid ""
+"Vai verificar se há uma versão mais nova da base da IEEE (~3 MB) e baixar só"
+" se houver mudança. Precisa de internet. Continuar?"
+msgstr ""
+"Vérifiera s'il existe une version plus récente de la base de données de "
+"l'IEEE (~3 Mo) et ne la téléchargera que si quelque chose a changé. "
+"Nécessite internet. Continuer ?"
+
+msgid "Endereço ou host inválido: {host}"
+msgstr "Adresse ou hôte invalide : {host}"
+
+msgid "&Salvar"
+msgstr "Enregi&strer"
+
+msgid "\"{ip}\" não é um endereço IPv4 válido."
+msgstr "« {ip} » n'est pas une adresse IPv4 valide."
+
+msgid "Não foi possível salvar a lista."
+msgstr "Impossible d'enregistrer la liste."
+
+msgid "\"{ip}\" está duplicado - apareceu mais de uma vez na lista."
+msgstr "« {ip} » est en double - il est apparu plus d'une fois dans la liste."
+
+msgid ""
+"Buscando o DNS mais rápido e estável entre os servidores da sua lista ({n} "
+"consultas por servidor), aguarde."
+msgstr ""
+"Recherche du DNS le plus rapide et le plus stable parmi les serveurs de "
+"votre liste ({n} requêtes par serveur), veuillez patienter."
+
+msgid "Endereço IPv4 do servidor DNS:"
+msgstr "Adresse IPv4 du serveur DNS :"
+
+msgid "Endereço IPv4 inválido: {ip}"
+msgstr "Adresse IPv4 invalide : {ip}"
+
+msgid "Gerenciar Servidores DNS"
+msgstr "Gérer les Serveurs DNS"
+
+msgid "Jitter: {j} ms"
+msgstr "Gigue : {j} ms"
+
+msgid "Latência média: {ms} ms"
+msgstr "Latence moyenne : {ms} ms"
+
+msgid "Lista salva - {n} servidor(es) DNS."
+msgstr "Liste enregistrée - {n} serveur(s) DNS."
+
+msgid ""
+"Lista salva vazia - a Busca de Melhor DNS não vai ter nenhum servidor para "
+"testar até que você adicione algum aqui."
+msgstr ""
+"Liste enregistrée vide - la Recherche du Meilleur DNS n'aura aucun serveur à"
+" tester tant que vous n'en ajoutez pas un ici."
+
+msgid "Máxima: {ms} ms"
+msgstr "Maximum : {ms} ms"
+
+msgid "Mínima: {ms} ms"
+msgstr "Minimum : {ms} ms"
+
+msgid "Perda: {p}% ({recv} de {sent} consultas responderam)"
+msgstr "Perte : {p} % ({recv} sur {sent} requêtes ont répondu)"
+
+msgid "Quantidade de servidores no &ranking da Busca de Melhor DNS:"
+msgstr ""
+"Nombre de serveurs dans le &classement de la Recherche du Meilleur DNS :"
+
+msgid "Servidor: {ip}{provedor}"
+msgstr "Serveur : {ip}{provedor}"
+
+msgid ""
+"Sua lista de servidores DNS está vazia. Adicione ao menos um em \"Gerenciar "
+"Servidores DNS\" antes de buscar o melhor."
+msgstr ""
+"Votre liste de serveurs DNS est vide. Ajoutez-en au moins un dans « Gérer "
+"les Serveurs DNS » avant de rechercher le meilleur."
+
+msgid "Testando {ip}, aguarde."
+msgstr "Test de {ip} en cours, veuillez patienter."
+
+msgid "Testar um Servidor DNS"
+msgstr "Tester un Serveur DNS"
+
+msgid "Teste de Servidor DNS"
+msgstr "Test de Serveur DNS"
+
+msgid ""
+"Um endereço IPv4 por linha - inclui os servidores padrão e os que você já "
+"adicionou. Edite, adicione ou remova livremente (inclusive os padrão). Esses"
+" são os servidores testados na próxima Busca de Melhor DNS. Deixe em branco "
+"para não ter nenhum."
+msgstr ""
+"Une adresse IPv4 par ligne - inclut les serveurs par défaut et ceux que vous"
+" avez déjà ajoutés. Modifiez, ajoutez ou supprimez librement (y compris les "
+"serveurs par défaut). Ce sont les serveurs testés lors de la prochaine "
+"Recherche du Meilleur DNS. Laissez vide pour n'en avoir aucun."
+
+msgid "{ip} não respondeu a nenhuma das {n} consultas."
+msgstr "{ip} n'a répondu à aucune des {n} requêtes."
+
+msgid "Consultas no &Teste de um Servidor DNS avulso:"
+msgstr "Requêtes dans le &Test d'un Serveur DNS isolé :"
+
+msgid "Tempo limite no Teste de um Servidor DNS a&vulso (segundos):"
+msgstr "Délai d'attente dans le Test d'un Serveur DNS isolé (&secondes) :"
+
+msgid ""
+"Protocolo - digite 4 para IPv4, 6 para IPv6, ou deixe em branco para "
+"automático:"
+msgstr ""
+"Protocole - saisissez 4 pour IPv4, 6 pour IPv6, ou laissez vide pour "
+"automatique :"
+
+msgid "Disponibilidade nesta rede"
+msgstr "Disponibilité sur ce réseau"
+
+msgid "Ethernet ({iface}, roteador {mac})"
+msgstr "Ethernet ({iface}, routeur {mac})"
+
+msgid ""
+"Monitor ativo (ligado há {dur} no total). {n} rede(s) visitada(s) nesta "
+"sessão."
+msgstr ""
+"Moniteur actif (allumé depuis {dur} au total). {n} réseau(x) visité(s) "
+"durant cette session."
+
+msgid "Monitorando esta rede há"
+msgstr "Surveillance de ce réseau depuis"
+
+msgid "Quedas nesta rede"
+msgstr "Coupures sur ce réseau"
+
+msgid "Rede alterada - agora monitorando {rede} ({target})."
+msgstr "Réseau modifié - surveillance de {rede} ({target}) en cours."
+
+msgid "rede desconhecida"
+msgstr "réseau inconnu"
+
+msgid "{rede} (atual)"
+msgstr "{rede} (actuel)"

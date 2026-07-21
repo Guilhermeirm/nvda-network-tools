@@ -1,0 +1,1980 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: networkTools 9.5.0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-07-08 09:40+0000\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: globalPlugins/networkTools.py:68 globalPlugins/networkTools.py:288
+#: globalPlugins/networkTools.py:310
+msgid "Status de IP e Gateway"
+msgstr "IP 和网关状态"
+
+#: globalPlugins/networkTools.py:70 globalPlugins/networkTools.py:194
+msgid "DNS"
+msgstr "DNS"
+
+#: globalPlugins/networkTools.py:72
+msgid "Informações e Senha Wi-Fi"
+msgstr "Wi-Fi 信息和密码"
+
+#: globalPlugins/networkTools.py:74
+msgid "Descobrir IP Público"
+msgstr "发现公网 IP"
+
+#: globalPlugins/networkTools.py:76
+msgid "Ping Inteligente"
+msgstr "智能 Ping"
+
+#: globalPlugins/networkTools.py:78
+msgid "Rastreio de Rota"
+msgstr "路由跟踪"
+
+#: globalPlugins/networkTools.py:80
+msgid "Varredura de Dispositivos"
+msgstr "设备扫描"
+
+#: globalPlugins/networkTools.py:82
+msgid "Localizar IP Externo"
+msgstr "定位外部 IP"
+
+#: globalPlugins/networkTools.py:84 globalPlugins/networkTools.py:845
+msgid "Teste de Velocidade da Internet"
+msgstr "网络速度测试"
+
+#: globalPlugins/networkTools.py:86
+msgid "Definir IP Estático (Admin)"
+msgstr "设置静态 IP(管理员)"
+
+#: globalPlugins/networkTools.py:88
+msgid "Voltar para IP Dinâmico (Admin)"
+msgstr "恢复动态 IP(管理员)"
+
+#: globalPlugins/networkTools.py:92
+msgid "Firewall (submenu)"
+msgstr "防火墙（子菜单）"
+
+#: globalPlugins/networkTools.py:107
+msgid "Portas Realmente Escutando Agora"
+msgstr "当前实际监听的端口"
+
+#: globalPlugins/networkTools.py:109
+msgid "Ver Regras de Firewall Ativas (Entrada e Saída)"
+msgstr "查看活动防火墙规则(入站和出站)"
+
+#: globalPlugins/networkTools.py:111
+msgid "Criar Regra de Firewall (Admin)"
+msgstr "创建防火墙规则(管理员)"
+
+#: globalPlugins/networkTools.py:113
+msgid "Remover Regra Existente (Admin)"
+msgstr "删除现有规则（管理员）"
+
+#: globalPlugins/networkTools.py:115 globalPlugins/networkTools.py:1195
+msgid "Status do Firewall por Perfil"
+msgstr "按配置文件查看防火墙状态"
+
+#: globalPlugins/networkTools.py:117 globalPlugins/networkTools.py:1200
+msgid "Testar Porta Localmente"
+msgstr "本地测试端口"
+
+#: globalPlugins/networkTools.py:129
+msgid "Ver Servidores DNS Atuais"
+msgstr "查看当前 DNS 服务器"
+
+#: globalPlugins/networkTools.py:131
+msgid "Aplicar DNS Personalizado (Admin)"
+msgstr "应用自定义 DNS(管理员)"
+
+#: globalPlugins/networkTools.py:158
+msgid "Abre o menu do Network Tools"
+msgstr "打开 Network Tools 菜单"
+
+#: globalPlugins/networkTools.py:210
+msgid "Firewall"
+msgstr "防火墙"
+
+#: globalPlugins/networkTools.py:266
+msgid "Requer NVDA rodando como Administrador."
+msgstr "需要以管理员身份运行 NVDA。"
+
+#: globalPlugins/networkTools.py:273
+msgid "Consultando IP, aguarde."
+msgstr "正在查询 IP,请稍候。"
+
+#: globalPlugins/networkTools.py:283
+msgid "Dinâmico (DHCP)"
+msgstr "动态 (DHCP)"
+
+#: globalPlugins/networkTools.py:285
+msgid "Fixo (Estático)"
+msgstr "静态 (固定)"
+
+#: globalPlugins/networkTools.py:287 globalPlugins/networkTools.py:536
+#: globalPlugins/networkTools.py:537 globalPlugins/networkTools.py:538
+msgid "não detectado"
+msgstr "未检测到"
+
+#: globalPlugins/networkTools.py:289 globalPlugins/networkTools.py:311
+msgid "Nome do computador"
+msgstr "计算机名称"
+
+#: globalPlugins/networkTools.py:290 globalPlugins/networkTools.py:312
+#: globalPlugins/networkTools.py:410 globalPlugins/networkTools.py:479
+#: globalPlugins/networkTools.py:889 globalPlugins/networkTools.py:909
+msgid "Interface"
+msgstr "接口"
+
+#: globalPlugins/networkTools.py:291 globalPlugins/networkTools.py:313
+msgid "Endereço IPv4"
+msgstr "IPv4 地址"
+
+#: globalPlugins/networkTools.py:292 globalPlugins/networkTools.py:314
+#: globalPlugins/networkTools.py:873 globalPlugins/networkTools.py:889
+msgid "Máscara"
+msgstr "子网掩码"
+
+#: globalPlugins/networkTools.py:292 globalPlugins/networkTools.py:314
+msgid "não encontrada"
+msgstr "未找到"
+
+#: globalPlugins/networkTools.py:293 globalPlugins/networkTools.py:315
+#: globalPlugins/networkTools.py:873 globalPlugins/networkTools.py:889
+msgid "Gateway"
+msgstr "网关"
+
+#: globalPlugins/networkTools.py:293 globalPlugins/networkTools.py:295
+#: globalPlugins/networkTools.py:296 globalPlugins/networkTools.py:313
+#: globalPlugins/networkTools.py:315 globalPlugins/networkTools.py:316
+#: globalPlugins/networkTools.py:317
+msgid "não encontrado"
+msgstr "未找到"
+
+#: globalPlugins/networkTools.py:294
+msgid "Modo de IP"
+msgstr "IP 模式"
+
+#: globalPlugins/networkTools.py:295 globalPlugins/networkTools.py:316
+msgid "Endereço MAC"
+msgstr "MAC 地址"
+
+#: globalPlugins/networkTools.py:296 globalPlugins/networkTools.py:317
+msgid "Endereço IPv6"
+msgstr "IPv6 地址"
+
+#: globalPlugins/networkTools.py:297 globalPlugins/networkTools.py:318
+msgid "Velocidade do adaptador de rede"
+msgstr "网络适配器速度"
+
+#: globalPlugins/networkTools.py:297 globalPlugins/networkTools.py:318
+#: globalPlugins/networkTools.py:539
+msgid "não detectada"
+msgstr "未检测到"
+
+#: globalPlugins/networkTools.py:303
+msgid "Erro ao obter IP."
+msgstr "获取 IP 出错。"
+
+#: globalPlugins/networkTools.py:323
+msgid "Consultando DNS, aguarde."
+msgstr "正在查询 DNS,请稍候。"
+
+#: globalPlugins/networkTools.py:331
+msgid "Erro ao obter DNS."
+msgstr "获取 DNS 出错。"
+
+#: globalPlugins/networkTools.py:335
+msgid "Nenhum DNS encontrado."
+msgstr "未找到 DNS。"
+
+#: globalPlugins/networkTools.py:337
+msgid "Servidores DNS:"
+msgstr "DNS 服务器:"
+
+#: globalPlugins/networkTools.py:342 globalPlugins/networkTools.py:412
+#: globalPlugins/networkTools.py:415 globalPlugins/networkTools.py:844
+#, python-brace-format
+msgid "{ms} ms"
+msgstr "{ms} 毫秒"
+
+#: globalPlugins/networkTools.py:342 globalPlugins/networkTools.py:844
+msgid "sem resposta"
+msgstr "无响应"
+
+#: globalPlugins/networkTools.py:344
+#, python-brace-format
+msgid "Servidor {n}"
+msgstr "服务器 {n}"
+
+#: globalPlugins/networkTools.py:345 globalPlugins/networkTools.py:846
+msgid "Latência"
+msgstr "延迟"
+
+#: globalPlugins/networkTools.py:346 globalPlugins/networkTools.py:827
+msgid "Provedor"
+msgstr "提供商"
+
+#: globalPlugins/networkTools.py:346
+msgid "não identificado"
+msgstr "未识别"
+
+#: globalPlugins/networkTools.py:350
+msgid "Servidores DNS"
+msgstr "DNS 服务器"
+
+#: globalPlugins/networkTools.py:359 globalPlugins/networkTools.py:882
+#: globalPlugins/networkTools.py:902
+msgid "Interface não detectada."
+msgstr "未检测到接口。"
+
+#: globalPlugins/networkTools.py:372
+msgid "Aplicar DNS Personalizado"
+msgstr "应用自定义 DNS"
+
+#: globalPlugins/networkTools.py:380
+msgid "Informe o DNS primário."
+msgstr "请输入主 DNS。"
+
+#: globalPlugins/networkTools.py:383 globalPlugins/networkTools.py:411
+msgid "DNS primário"
+msgstr "主 DNS"
+
+#: globalPlugins/networkTools.py:383 globalPlugins/networkTools.py:416
+#: globalPlugins/networkTools.py:484
+msgid "DNS secundário"
+msgstr "备用 DNS"
+
+#: globalPlugins/networkTools.py:389
+#, python-brace-format
+msgid "IP inválido em {campo}: {valor}"
+msgstr "{campo} 中的 IP 无效:{valor}"
+
+#: globalPlugins/networkTools.py:394
+#, python-brace-format
+msgid "Testando o servidor DNS {ip}, aguarde."
+msgstr "正在测试 DNS 服务器 {ip},请稍候。"
+
+#: globalPlugins/networkTools.py:412
+msgid "Latência do teste"
+msgstr "测试延迟"
+
+#: globalPlugins/networkTools.py:415
+msgid "sem resposta ao teste (configurado mesmo assim)"
+msgstr "测试无响应(仍已配置)"
+
+#: globalPlugins/networkTools.py:418 globalPlugins/networkTools.py:486
+#: globalPlugins/networkTools.py:489 globalPlugins/networkTools.py:1240
+msgid "Aviso"
+msgstr "提示"
+
+#: globalPlugins/networkTools.py:418 globalPlugins/networkTools.py:486
+#, python-brace-format
+msgid "Não foi possível configurar o DNS secundário: {detail}"
+msgstr "无法配置备用 DNS:{detail}"
+
+#: globalPlugins/networkTools.py:420 globalPlugins/networkTools.py:495
+#: globalPlugins/networkTools.py:909 globalPlugins/networkTools.py:1118
+msgid "Status"
+msgstr "状态"
+
+#: globalPlugins/networkTools.py:420
+msgid "✔ Aplicado com sucesso (porta 53 disponível)"
+msgstr "✔ 应用成功(端口 53 可用)"
+
+#: globalPlugins/networkTools.py:421
+msgid "DNS Personalizado Aplicado"
+msgstr "自定义 DNS 已应用"
+
+#: globalPlugins/networkTools.py:424
+#, python-brace-format
+msgid "O teste funcionou, mas houve erro ao aplicar a configuração: {detail}"
+msgstr "测试成功,但应用设置时出错:{detail}"
+
+#: globalPlugins/networkTools.py:436
+#, python-brace-format
+msgid ""
+"Não foi possível confirmar o DNS {ip} pela porta 53 (isso costuma indicar "
+"bloqueio pelo roteador ou pelo provedor de internet). O Modo Seguro (DNS via"
+" HTTPS) não está disponível para este servidor, porque ele não é um provedor"
+" público com suporte documentado a DNS criptografado. Tente novamente com um"
+" provedor como Google (8.8.8.8), Cloudflare (1.1.1.1) ou Quad9 (9.9.9.9)."
+msgstr ""
+"无法通过端口 53 确认 DNS {ip}(这通常表示路由器或互联网服务商进行了阻止)。安全模式(基于 HTTPS 的 "
+"DNS)对此服务器不可用,因为它不是具有加密 DNS 文档支持的公共提供商。请改用 "
+"Google(8.8.8.8)、Cloudflare(1.1.1.1)或 Quad9(9.9.9.9)等提供商重试。"
+
+#: globalPlugins/networkTools.py:446
+msgid "Porta 53 Bloqueada"
+msgstr "端口 53 被阻止"
+
+#: globalPlugins/networkTools.py:457
+msgid "Testando DNS via HTTPS (Modo Seguro), aguarde."
+msgstr "正在测试基于 HTTPS 的 DNS(安全模式),请稍候。"
+
+#: globalPlugins/networkTools.py:462
+#, python-brace-format
+msgid ""
+"O Modo Seguro também não funcionou: o servidor {ip} não respondeu pela porta"
+" 443 (HTTPS). Isso pode indicar um bloqueio mais amplo da rede, ou que o "
+"serviço esteja temporariamente indisponível."
+msgstr "安全模式也未成功:服务器 {ip} 未在端口 443(HTTPS)上响应。这可能表示网络存在更广泛的阻止,或者该服务暂时不可用。"
+
+#: globalPlugins/networkTools.py:471
+#, python-brace-format
+msgid ""
+"O teste via HTTPS funcionou, mas este Windows não aceitou o registro de DNS "
+"criptografado: {detail} Esse recurso requer uma versão mais recente do "
+"Windows 10 ou 11."
+msgstr ""
+"HTTPS 测试成功,但此 Windows 未接受加密 DNS 注册:{detail} 此功能需要更新版本的 Windows 10 或 11。"
+
+#: globalPlugins/networkTools.py:480
+msgid "Servidor DNS"
+msgstr "DNS 服务器"
+
+#: globalPlugins/networkTools.py:481
+msgid "Modo"
+msgstr "模式"
+
+#: globalPlugins/networkTools.py:481
+msgid "DNS via HTTPS (DoH)"
+msgstr "基于 HTTPS 的 DNS(DoH)"
+
+#: globalPlugins/networkTools.py:490
+msgid ""
+"O DNS secundário usa a porta 53 tradicional, não o Modo Seguro - se o mesmo "
+"bloqueio afetar esse servidor, o Windows deve usar o primário normalmente."
+msgstr "备用 DNS 使用传统的端口 53,而非安全模式——如果该服务器也受到相同的阻止,Windows 应会正常使用主 DNS。"
+
+#: globalPlugins/networkTools.py:495
+msgid "✔ Proteção ativa — bloqueio de porta 53 contornado"
+msgstr "✔ 保护已启用——已绕过端口 53 阻止"
+
+#: globalPlugins/networkTools.py:496
+msgid "Modo Seguro Ativo"
+msgstr "安全模式已启用"
+
+#: globalPlugins/networkTools.py:498
+#, python-brace-format
+msgid "Erro ao aplicar o DNS: {detail}"
+msgstr "应用 DNS 时出错:{detail}"
+
+#: globalPlugins/networkTools.py:502
+msgid "Consultando Wi-Fi, aguarde."
+msgstr "正在查询 Wi-Fi,请稍候。"
+
+#: globalPlugins/networkTools.py:505
+msgid "Nenhuma rede Wi-Fi."
+msgstr "没有 Wi-Fi 网络。"
+
+#: globalPlugins/networkTools.py:516
+#, python-brace-format
+msgid ""
+"Conectado via cabo Ethernet (adaptador: {iface}). Nenhuma rede Wi-Fi ativa "
+"no momento."
+msgstr "已通过以太网电缆连接(适配器:{iface})。当前没有活动的 Wi-Fi 网络。"
+
+#: globalPlugins/networkTools.py:521
+msgid "Nenhuma rede Wi-Fi conectada no momento."
+msgstr "当前没有连接的 Wi-Fi 网络。"
+
+#: globalPlugins/networkTools.py:532
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+#: globalPlugins/networkTools.py:533
+msgid "Rede"
+msgstr "网络"
+
+#: globalPlugins/networkTools.py:534
+msgid "Sinal"
+msgstr "信号"
+
+#: globalPlugins/networkTools.py:535
+msgid "Autenticação"
+msgstr "身份验证"
+
+#: globalPlugins/networkTools.py:536
+msgid "Canal"
+msgstr "信道"
+
+#: globalPlugins/networkTools.py:537
+msgid "Tipo de rádio"
+msgstr "无线电类型"
+
+#: globalPlugins/networkTools.py:538
+msgid "BSSID (roteador)"
+msgstr "BSSID（路由器）"
+
+#: globalPlugins/networkTools.py:539
+msgid "Velocidade do link Wi-Fi"
+msgstr "Wi-Fi 链路速度"
+
+#: globalPlugins/networkTools.py:540
+msgid "Senha"
+msgstr "密码"
+
+#: globalPlugins/networkTools.py:540
+msgid "não disponível (requer Admin)"
+msgstr "不可用(需要管理员)"
+
+#: globalPlugins/networkTools.py:546
+msgid "Buscando IP público, aguarde."
+msgstr "正在查询公网 IP,请稍候。"
+
+#: globalPlugins/networkTools.py:551 globalPlugins/networkTools.py:563
+msgid "IP Público"
+msgstr "公网 IP"
+
+#: globalPlugins/networkTools.py:551 globalPlugins/networkTools.py:563
+#, python-brace-format
+msgid "IP Público: {ip}"
+msgstr "公网 IP: {ip}"
+
+#: globalPlugins/networkTools.py:565
+msgid "Não foi possível obter o IP público."
+msgstr "无法获取公网 IP。"
+
+#: globalPlugins/networkTools.py:572
+msgid "Ping"
+msgstr "Ping"
+
+#: globalPlugins/networkTools.py:572
+msgid "Endereço ou IP para pingar:"
+msgstr "要 ping 的地址或 IP:"
+
+#: globalPlugins/networkTools.py:577
+#, python-brace-format
+msgid "Ping para {host}, aguarde."
+msgstr "正在 ping {host},请稍候。"
+
+#: globalPlugins/networkTools.py:582 globalPlugins/networkTools.py:604
+#, python-brace-format
+msgid "Sem resposta de {host}."
+msgstr "{host} 无响应。"
+
+#: globalPlugins/networkTools.py:584 globalPlugins/networkTools.py:606
+#, python-brace-format
+msgid "Ping - {host}"
+msgstr "Ping - {host}"
+
+#: globalPlugins/networkTools.py:585 globalPlugins/networkTools.py:607
+msgid "Destino"
+msgstr "目标"
+
+#: globalPlugins/networkTools.py:586 globalPlugins/networkTools.py:608
+msgid "Latência média"
+msgstr "平均延迟"
+
+#: globalPlugins/networkTools.py:586 globalPlugins/networkTools.py:608
+#, python-brace-format
+msgid "{avg} ms"
+msgstr "{avg} 毫秒"
+
+#: globalPlugins/networkTools.py:587
+msgid "Latência mínima"
+msgstr "最小延迟"
+
+#: globalPlugins/networkTools.py:587 globalPlugins/networkTools.py:588
+#: globalPlugins/networkTools.py:589
+#, python-brace-format
+msgid "{v} ms"
+msgstr "{v} 毫秒"
+
+#: globalPlugins/networkTools.py:588
+msgid "Latência máxima"
+msgstr "最大延迟"
+
+#: globalPlugins/networkTools.py:589
+msgid "Jitter"
+msgstr "抖动"
+
+#: globalPlugins/networkTools.py:590 globalPlugins/networkTools.py:609
+msgid "TTL"
+msgstr "TTL"
+
+#: globalPlugins/networkTools.py:591 globalPlugins/networkTools.py:610
+msgid "Perda de pacotes"
+msgstr "丢包率"
+
+#: globalPlugins/networkTools.py:591 globalPlugins/networkTools.py:610
+#, python-brace-format
+msgid "{loss}%"
+msgstr "{loss}%"
+
+#: globalPlugins/networkTools.py:597
+#, python-brace-format
+msgid "Erro ao pingar {host}."
+msgstr "ping {host} 出错。"
+
+#: globalPlugins/networkTools.py:616
+msgid "Traceroute"
+msgstr "路由跟踪"
+
+#: globalPlugins/networkTools.py:616
+msgid "Endereço de destino:"
+msgstr "目标地址:"
+
+#: globalPlugins/networkTools.py:621
+#, python-brace-format
+msgid "Traceroute para {host}. Bipes a cada salto."
+msgstr "正在跟踪到 {host} 的路由。每跳一次提示音。"
+
+#: globalPlugins/networkTools.py:640
+msgid "Erro no traceroute."
+msgstr "路由跟踪出错。"
+
+#: globalPlugins/networkTools.py:677
+msgid "Nenhum salto encontrado."
+msgstr "未找到跃点。"
+
+#: globalPlugins/networkTools.py:682
+#, python-brace-format
+msgid "Salto {n}: {ip} - {ms} ms"
+msgstr "跳数 {n}：{ip} - {ms} 毫秒"
+
+#: globalPlugins/networkTools.py:685
+#, python-brace-format
+msgid "Salto {n}: sem resposta (roteador não responde a ICMP)"
+msgstr "跃点 {n}:无响应(路由器不响应 ICMP)"
+
+#: globalPlugins/networkTools.py:707
+#, python-brace-format
+msgid "Total: {n} saltos"
+msgstr "共 {n} 跳"
+
+#: globalPlugins/networkTools.py:709
+#, python-brace-format
+msgid "Destino alcançado no salto {n}."
+msgstr "在跃点 {n} 到达目的地。"
+
+#: globalPlugins/networkTools.py:712
+#, python-brace-format
+msgid "Destino não alcançado: os últimos {n} saltos não responderam."
+msgstr "未到达目的地:最后 {n} 个跃点没有响应。"
+
+#: globalPlugins/networkTools.py:715
+msgid "Destino não alcançado dentro do limite de saltos."
+msgstr "在跃点数限制内未到达目的地。"
+
+#: globalPlugins/networkTools.py:716
+#, python-brace-format
+msgid "Traceroute - {host}"
+msgstr "路由跟踪 - {host}"
+
+#: globalPlugins/networkTools.py:721
+msgid "Varrendo rede local com ping, aguarde alguns segundos."
+msgstr "正在使用 ping 扫描本地网络，请稍候几秒。"
+
+#: globalPlugins/networkTools.py:730
+msgid "Não foi possível detectar a rede local."
+msgstr "无法检测本地网络。"
+
+#: globalPlugins/networkTools.py:775
+msgid "Nenhum dispositivo encontrado."
+msgstr "未找到设备。"
+
+#: globalPlugins/networkTools.py:786
+msgid "Dispositivos na Rede"
+msgstr "网络中的设备"
+
+#: globalPlugins/networkTools.py:787
+#, python-brace-format
+msgid "Total: {n}"
+msgstr "共 {n} 个"
+
+#: globalPlugins/networkTools.py:792
+msgid "Localizar IP"
+msgstr "定位 IP"
+
+#: globalPlugins/networkTools.py:792
+msgid "IP para consultar:"
+msgstr "要查询的 IP:"
+
+#: globalPlugins/networkTools.py:805
+#, python-brace-format
+msgid "Endereço IP inválido: {ip}"
+msgstr "无效的 IP 地址:{ip}"
+
+#: globalPlugins/networkTools.py:808
+#, python-brace-format
+msgid "Consultando {ip}, aguarde."
+msgstr "正在查询 {ip},请稍候。"
+
+#: globalPlugins/networkTools.py:811
+#, python-brace-format
+msgid "Erro ao consultar {ip}."
+msgstr "查询 {ip} 出错。"
+
+#: globalPlugins/networkTools.py:816
+msgid "Resposta inválida."
+msgstr "响应无效。"
+
+#: globalPlugins/networkTools.py:819
+#, python-brace-format
+msgid "IP {ip} não encontrado ou privado."
+msgstr "未找到 IP {ip} 或为私有地址。"
+
+#: globalPlugins/networkTools.py:821
+#, python-brace-format
+msgid "Whois - {ip}"
+msgstr "Whois - {ip}"
+
+#: globalPlugins/networkTools.py:822 globalPlugins/networkTools.py:873
+#: globalPlugins/networkTools.py:889
+msgid "IP"
+msgstr "IP"
+
+#: globalPlugins/networkTools.py:823
+msgid "País"
+msgstr "国家"
+
+#: globalPlugins/networkTools.py:824
+msgid "Estado"
+msgstr "地区"
+
+#: globalPlugins/networkTools.py:825
+msgid "Cidade"
+msgstr "城市"
+
+#: globalPlugins/networkTools.py:826
+msgid "Fuso horário"
+msgstr "时区"
+
+#: globalPlugins/networkTools.py:828
+msgid "Organização"
+msgstr "组织"
+
+#: globalPlugins/networkTools.py:829
+msgid "ASN"
+msgstr "ASN"
+
+#: globalPlugins/networkTools.py:835
+msgid "Testando velocidade da internet, isso pode levar alguns segundos."
+msgstr "正在测试网络速度,这可能需要几秒钟。"
+
+#: globalPlugins/networkTools.py:847
+msgid "Download"
+msgstr "下载"
+
+#: globalPlugins/networkTools.py:847 globalPlugins/networkTools.py:848
+msgid "falhou"
+msgstr "失败"
+
+#: globalPlugins/networkTools.py:848
+msgid "Upload"
+msgstr "上传"
+
+#: globalPlugins/networkTools.py:877
+#, python-brace-format
+msgid "Valor inválido em {campo}: {valor}"
+msgstr "{campo} 中的值无效:{valor}"
+
+#: globalPlugins/networkTools.py:885
+#, python-brace-format
+msgid "Aplicando {ip}, aguarde."
+msgstr "正在应用 {ip},请稍候。"
+
+#: globalPlugins/networkTools.py:888
+msgid "IP Estático OK"
+msgstr "静态 IP 设置成功"
+
+#: globalPlugins/networkTools.py:892
+#, python-brace-format
+msgid "Erro: {detail}"
+msgstr "错误: {detail}"
+
+#: globalPlugins/networkTools.py:905
+msgid "Revertendo para DHCP, aguarde."
+msgstr "正在恢复 DHCP,请稍候。"
+
+#: globalPlugins/networkTools.py:909
+msgid "DHCP OK"
+msgstr "DHCP 恢复成功"
+
+#: globalPlugins/networkTools.py:909
+msgid "IP dinâmico ativado"
+msgstr "动态 IP 已启用"
+
+#: globalPlugins/networkTools.py:920
+msgid "Cache DNS limpo"
+msgstr "DNS 缓存已清除"
+
+#: globalPlugins/networkTools.py:921
+msgid "IP liberado"
+msgstr "IP 已释放"
+
+#: globalPlugins/networkTools.py:922
+msgid "Novo IP solicitado"
+msgstr "已请求新 IP"
+
+#: globalPlugins/networkTools.py:923
+msgid "Pilha resetada (reinicie o PC)"
+msgstr "网络堆栈已重置(请重启电脑)"
+
+#: globalPlugins/networkTools.py:926
+msgid "OK"
+msgstr "OK"
+
+#: globalPlugins/networkTools.py:926
+msgid "FALHA"
+msgstr "失败"
+
+#: globalPlugins/networkTools.py:938
+msgid "Monitor desativado."
+msgstr "监视器已关闭。"
+
+#: globalPlugins/networkTools.py:951
+msgid "Conexão restabelecida."
+msgstr "连接已恢复。"
+
+#: globalPlugins/networkTools.py:955
+msgid "Aviso: sem conexão no momento."
+msgstr "提示:当前没有连接。"
+
+#: globalPlugins/networkTools.py:961
+msgid "Monitor ativado. NVDA avisará sobre quedas de rede."
+msgstr "监视器已开启。NVDA 将播报连接中断。"
+
+#: globalPlugins/networkTools.py:983
+msgid "Consultando portas em escuta, aguarde."
+msgstr "正在查询监听端口，请稍候。"
+
+#: globalPlugins/networkTools.py:987
+msgid "Nenhuma porta em escuta encontrada."
+msgstr "未找到任何监听端口。"
+
+#: globalPlugins/networkTools.py:990
+#, python-brace-format
+msgid "{proto} {porta} — processo: {proc} (PID {pid})"
+msgstr "{proto} {porta} — 进程：{proc}（PID {pid}）"
+
+#: globalPlugins/networkTools.py:994
+#, python-brace-format
+msgid "Total: {n} portas em escuta"
+msgstr "共 {n} 个监听端口"
+
+#: globalPlugins/networkTools.py:995
+msgid "Portas em Escuta"
+msgstr "监听端口"
+
+#: globalPlugins/networkTools.py:999
+msgid "Consultando regras de firewall ativas, aguarde."
+msgstr "正在查询活动的防火墙规则，请稍候。"
+
+#: globalPlugins/networkTools.py:1004
+msgid "Nenhuma regra de firewall ativa encontrada."
+msgstr "未找到活动的防火墙规则。"
+
+#: globalPlugins/networkTools.py:1010
+msgid "Nome"
+msgstr "名称"
+
+#: globalPlugins/networkTools.py:1011 globalPlugins/networkTools.py:1117
+msgid "Perfis"
+msgstr "配置文件"
+
+#: globalPlugins/networkTools.py:1012 networkToolsLib/dialogs.py:233
+#: networkToolsLib/dialogs.py:312
+msgid "Protocolo"
+msgstr "协议"
+
+#: globalPlugins/networkTools.py:1013
+msgid "Porta local"
+msgstr "本地端口"
+
+#: globalPlugins/networkTools.py:1014 globalPlugins/networkTools.py:1109
+#: networkToolsLib/dialogs.py:331
+msgid "Ação"
+msgstr "操作"
+
+#: globalPlugins/networkTools.py:1018
+#, python-brace-format
+msgid "Entrada ({n})"
+msgstr "入站 ({n})"
+
+#: globalPlugins/networkTools.py:1019
+msgid "Nenhuma regra de entrada ativa."
+msgstr "没有活动的入站规则。"
+
+#: globalPlugins/networkTools.py:1020
+#, python-brace-format
+msgid "Saída ({n})"
+msgstr "出站 ({n})"
+
+#: globalPlugins/networkTools.py:1021
+msgid "Nenhuma regra de saída ativa."
+msgstr "没有活动的出站规则。"
+
+#: globalPlugins/networkTools.py:1023
+#, python-brace-format
+msgid "Total: {n} regras ativas ({entrada} de entrada, {saida} de saída)"
+msgstr "共 {n} 条活动规则(入站 {entrada} 条,出站 {saida} 条)"
+
+#: globalPlugins/networkTools.py:1025
+msgid "Regras de Firewall Ativas"
+msgstr "活动防火墙规则"
+
+#: globalPlugins/networkTools.py:1033
+msgid "Criar Regra de Firewall"
+msgstr "创建防火墙规则"
+
+#: globalPlugins/networkTools.py:1052
+msgid "Informe o caminho do programa."
+msgstr "请输入程序路径。"
+
+#: globalPlugins/networkTools.py:1058 globalPlugins/networkTools.py:1208
+#, python-brace-format
+msgid "Porta inválida: {porta}"
+msgstr "无效端口：{porta}"
+
+#: globalPlugins/networkTools.py:1067 networkToolsLib/dialogs.py:339
+msgid "Domínio"
+msgstr "域"
+
+#: globalPlugins/networkTools.py:1069 networkToolsLib/dialogs.py:342
+msgid "Privado"
+msgstr "专用"
+
+#: globalPlugins/networkTools.py:1071 networkToolsLib/dialogs.py:345
+msgid "Público"
+msgstr "公用"
+
+#: globalPlugins/networkTools.py:1076
+msgid "Todos"
+msgstr "全部"
+
+#: globalPlugins/networkTools.py:1088
+msgid "Confirmar Regra de Entrada"
+msgstr "确认入站规则"
+
+#: globalPlugins/networkTools.py:1093
+msgid "QUALQUER endereço"
+msgstr "任意地址"
+
+#: globalPlugins/networkTools.py:1098
+msgid "Criando regra de firewall, aguarde."
+msgstr "正在创建防火墙规则,请稍候。"
+
+#: globalPlugins/networkTools.py:1107
+msgid "Regra"
+msgstr "规则"
+
+#: globalPlugins/networkTools.py:1108 networkToolsLib/dialogs.py:302
+msgid "Direção"
+msgstr "方向"
+
+#: globalPlugins/networkTools.py:1108 globalPlugins/networkTools.py:1143
+#: globalPlugins/networkTools.py:1161
+msgid "Entrada"
+msgstr "入站"
+
+#: globalPlugins/networkTools.py:1108 globalPlugins/networkTools.py:1143
+#: globalPlugins/networkTools.py:1161
+msgid "Saída"
+msgstr "出站"
+
+#: globalPlugins/networkTools.py:1109 networkToolsLib/dialogs.py:332
+msgid "Permitir"
+msgstr "允许"
+
+#: globalPlugins/networkTools.py:1109 networkToolsLib/dialogs.py:332
+msgid "Bloquear"
+msgstr "阻止"
+
+#: globalPlugins/networkTools.py:1112
+msgid "Programa"
+msgstr "程序"
+
+#: globalPlugins/networkTools.py:1114 globalPlugins/networkTools.py:1215
+msgid "Porta"
+msgstr "端口"
+
+#: globalPlugins/networkTools.py:1116
+msgid "IP remoto"
+msgstr "远程 IP"
+
+#: globalPlugins/networkTools.py:1118
+msgid "Regra criada com sucesso"
+msgstr "规则创建成功"
+
+#: globalPlugins/networkTools.py:1119
+msgid "Regra de Firewall Criada"
+msgstr "防火墙规则已创建"
+
+#: globalPlugins/networkTools.py:1121
+#, python-brace-format
+msgid "Erro ao criar a regra: {detail}"
+msgstr "创建规则时出错：{detail}"
+
+#: globalPlugins/networkTools.py:1129
+msgid ""
+"Consultando todas as regras de firewall, aguarde. Isso inclui as regras "
+"padrão do Windows, então pode demorar um pouco."
+msgstr "正在检查所有防火墙规则,请稍候。由于包含 Windows 默认规则,可能需要一些时间。"
+
+#: globalPlugins/networkTools.py:1139
+msgid "Nenhuma regra de firewall foi encontrada."
+msgstr "未找到防火墙规则。"
+
+#: globalPlugins/networkTools.py:1144
+#, python-brace-format
+msgid "{nome} — {direcao}"
+msgstr "{nome} — {direcao}"
+
+#: globalPlugins/networkTools.py:1147
+msgid "Selecionar Regra para Remover"
+msgstr "选择要删除的规则"
+
+#: globalPlugins/networkTools.py:1163
+msgid "Confirmar Remoção de Regra do Sistema"
+msgstr "确认删除系统规则"
+
+#: globalPlugins/networkTools.py:1173
+msgid "Removendo regra, aguarde."
+msgstr "正在删除规则，请稍候。"
+
+#: globalPlugins/networkTools.py:1177
+#, python-brace-format
+msgid "Regra removida: {nome}"
+msgstr "规则已删除：{nome}"
+
+#: globalPlugins/networkTools.py:1179
+#, python-brace-format
+msgid "Erro ao remover a regra: {detail}"
+msgstr "删除规则时出错：{detail}"
+
+#: globalPlugins/networkTools.py:1183
+msgid "Consultando status do firewall, aguarde."
+msgstr "正在查询防火墙状态，请稍候。"
+
+#: globalPlugins/networkTools.py:1187
+msgid "Não foi possível consultar o status do firewall."
+msgstr "无法查询防火墙状态。"
+
+#: globalPlugins/networkTools.py:1190
+#, python-brace-format
+msgid "{perfil}: {status}"
+msgstr "{perfil}：{status}"
+
+#: globalPlugins/networkTools.py:1192
+msgid "Ligado"
+msgstr "已开启"
+
+#: globalPlugins/networkTools.py:1192
+msgid "Desligado"
+msgstr "已关闭"
+
+#: globalPlugins/networkTools.py:1211
+#, python-brace-format
+msgid "Testando a porta {porta}/{protocolo} localmente, aguarde."
+msgstr "正在本地测试端口 {porta}/{protocolo},请稍候。"
+
+#: globalPlugins/networkTools.py:1216
+msgid "Algo escutando agora"
+msgstr "当前有程序在监听"
+
+#: globalPlugins/networkTools.py:1216 globalPlugins/networkTools.py:1222
+msgid "Sim"
+msgstr "是"
+
+#: globalPlugins/networkTools.py:1216
+msgid "Não"
+msgstr "否"
+
+#: globalPlugins/networkTools.py:1219
+msgid "Processo"
+msgstr "进程"
+
+#: globalPlugins/networkTools.py:1219
+#, python-brace-format
+msgid "{proc} (PID {pid})"
+msgstr "{proc} (PID {pid})"
+
+#: globalPlugins/networkTools.py:1221
+msgid "Regra de firewall permitindo"
+msgstr "允许该端口的防火墙规则"
+
+#: globalPlugins/networkTools.py:1222
+msgid "Não encontrada"
+msgstr "未找到"
+
+#: globalPlugins/networkTools.py:1225
+msgid "Nome da regra"
+msgstr "规则名称"
+
+#: globalPlugins/networkTools.py:1227 networkToolsLib/dialogs.py:297
+msgid "Tipo de regra"
+msgstr "规则类型"
+
+#: globalPlugins/networkTools.py:1228
+msgid "Específica desta porta"
+msgstr "专用于此端口"
+
+#: globalPlugins/networkTools.py:1229
+msgid "Genérica de programa (libera qualquer porta)"
+msgstr "程序通用规则(开放任意端口)"
+
+#: globalPlugins/networkTools.py:1233
+msgid "Conexão local de teste"
+msgstr "本地测试连接"
+
+#: globalPlugins/networkTools.py:1234
+msgid "Bem-sucedida"
+msgstr "成功"
+
+#: globalPlugins/networkTools.py:1234
+msgid "Falhou"
+msgstr "失败"
+
+#: globalPlugins/networkTools.py:1241
+#, python-brace-format
+msgid ""
+"A porta {porta} está entre as que a maioria dos provedores de internet "
+"bloqueia por padrão, independente de qualquer configuração sua. Mesmo um "
+"resultado local positivo aqui não garante acesso vindo de fora da sua rede."
+msgstr ""
+"端口 {porta} 属于大多数互联网服务商默认屏蔽的端口之一,与您自己的配置无关。即使这里的本地测试结果为正,也不能保证能从您的网络外部访问。"
+
+#: globalPlugins/networkTools.py:1247
+msgid "Teste de Porta Local"
+msgstr "本地端口测试"
+
+#: networkToolsLib/dialogs.py:23 networkToolsLib/dialogs.py:197
+#: networkToolsLib/dialogs.py:236 networkToolsLib/dialogs.py:364
+msgid "&Confirmar"
+msgstr "确认(&C)"
+
+#: networkToolsLib/dialogs.py:26 networkToolsLib/dialogs.py:151
+#: networkToolsLib/dialogs.py:199 networkToolsLib/dialogs.py:238
+#: networkToolsLib/dialogs.py:366
+msgid "Cancelar"
+msgstr "取消"
+
+#: networkToolsLib/dialogs.py:62 networkToolsLib/dialogs.py:111
+#: networkToolsLib/dialogs.py:426
+msgid "&Fechar"
+msgstr "关闭(&F)"
+
+#: networkToolsLib/dialogs.py:134
+msgid "Configurar IP Estático"
+msgstr "配置静态 IP"
+
+#: networkToolsLib/dialogs.py:143
+msgid "Endereço IPv4:"
+msgstr "IPv4 地址:"
+
+#: networkToolsLib/dialogs.py:145
+msgid "Máscara Sub-rede:"
+msgstr "子网掩码:"
+
+#: networkToolsLib/dialogs.py:147
+msgid "Gateway Padrão:"
+msgstr "默认网关:"
+
+#: networkToolsLib/dialogs.py:149
+msgid "&Aplicar"
+msgstr "应用(&A)"
+
+#: networkToolsLib/dialogs.py:194
+msgid "DNS primário:"
+msgstr "主 DNS:"
+
+#: networkToolsLib/dialogs.py:196
+msgid "DNS secundário (opcional):"
+msgstr "备用 DNS(可选):"
+
+#: networkToolsLib/dialogs.py:228
+msgid "Número da porta (1 a 65535):"
+msgstr "端口号（1 到 65535）："
+
+#: networkToolsLib/dialogs.py:298
+msgid "Baseada em Porta"
+msgstr "基于端口"
+
+#: networkToolsLib/dialogs.py:298
+msgid "Baseada em Programa"
+msgstr "基于程序"
+
+#: networkToolsLib/dialogs.py:303
+msgid "Entrada (tráfego chegando)"
+msgstr "入站(传入流量)"
+
+#: networkToolsLib/dialogs.py:303
+msgid "Saída (tráfego saindo)"
+msgstr "出站(传出流量)"
+
+#: networkToolsLib/dialogs.py:307
+msgid "Porta (se a regra for baseada em porta):"
+msgstr "端口(若规则基于端口):"
+
+#: networkToolsLib/dialogs.py:318
+msgid "Caminho completo do programa (se a regra for baseada em programa):"
+msgstr "程序完整路径(若规则基于程序):"
+
+#: networkToolsLib/dialogs.py:325
+msgid "Endereços IP remotos (opcional, ex.: 192.168.1.10 ou 10.0.0.0/24):"
+msgstr "远程 IP 地址(可选,例如:192.168.1.10 或 10.0.0.0/24):"
+
+#: networkToolsLib/dialogs.py:336
+msgid "Perfis de Rede"
+msgstr "网络配置文件"
+
+#: networkToolsLib/dialogs.py:353
+msgid "Nome da regra:"
+msgstr "规则名称:"
+
+#: networkToolsLib/dialogs.py:359
+msgid "Descrição (opcional):"
+msgstr "描述(可选):"
+
+#: networkToolsLib/dialogs.py:417
+msgid "Setas para navegar, Enter para ativar, Escape para fechar:"
+msgstr "方向键导航,回车激活,Esc 关闭:"
+
+#: networkToolsLib/sysutils.py:70 networkToolsLib/sysutils.py:93
+msgid "Tempo esgotado."
+msgstr "超时。"
+
+#: globalPlugins/networkTools.py:0
+msgid "IPv6 (submenu)"
+msgstr "IPv6（子菜单）"
+
+#: globalPlugins/networkTools.py:0
+msgid "Teste de Conectividade IPv6"
+msgstr "IPv6 连接测试"
+
+#: globalPlugins/networkTools.py:0
+msgid "Teste de DNS IPv6"
+msgstr "IPv6 DNS 测试"
+
+#: globalPlugins/networkTools.py:0
+msgid "Diagnóstico IPv6 Completo"
+msgstr "IPv6 完整诊断"
+
+#: globalPlugins/networkTools.py:0
+msgid "IPv6"
+msgstr "IPv6"
+
+#: globalPlugins/networkTools.py:0
+msgid "Testando conectividade IPv6, aguarde."
+msgstr "正在测试 IPv6 连接，请稍候。"
+
+#: globalPlugins/networkTools.py:0
+msgid "Nenhum endereço IPv6 encontrado nesta interface."
+msgstr "在此网络接口上未找到 IPv6 地址。"
+
+#: globalPlugins/networkTools.py:0
+msgid "IPv6 funcionando: conexão de saída para a internet confirmada."
+msgstr "IPv6 正常：已确认可以通过 IPv6 连接到互联网。"
+
+#: globalPlugins/networkTools.py:0
+msgid "IPv6 presente, mas sem conexão."
+msgstr "IPv6 存在，但没有连接。"
+
+#: globalPlugins/networkTools.py:0
+msgid "Endereço IPv6 global"
+msgstr "全局 IPv6 地址"
+
+#: globalPlugins/networkTools.py:0
+msgid "nenhum"
+msgstr "无"
+
+#: globalPlugins/networkTools.py:0
+msgid "Endereço IPv6 local (link-local)"
+msgstr "本地 IPv6 地址（链路本地）"
+
+#: globalPlugins/networkTools.py:0
+msgid "Testado contra"
+msgstr "测试对象"
+
+#: globalPlugins/networkTools.py:0
+msgid "nenhum servidor respondeu"
+msgstr "没有服务器响应"
+
+#: globalPlugins/networkTools.py:0
+msgid "Resultado"
+msgstr "结果"
+
+#: globalPlugins/networkTools.py:0
+msgid "Domínio para testar:"
+msgstr "要测试的域名："
+
+#: globalPlugins/networkTools.py:0
+msgid "Testando DNS IPv6 para {host}, aguarde."
+msgstr "正在为 {host} 测试 IPv6 DNS，请稍候。"
+
+#: globalPlugins/networkTools.py:0
+msgid "O DNS não retornou nenhum endereço IPv6 (AAAA) para este domínio."
+msgstr "DNS 没有为此域名返回任何 IPv6（AAAA）地址。"
+
+#: globalPlugins/networkTools.py:0
+msgid "DNS IPv6 ok, conexão IPv6 funcionando."
+msgstr "IPv6 DNS 正常，IPv6 连接正常。"
+
+#: globalPlugins/networkTools.py:0
+msgid "DNS IPv6 ok, conexão IPv6 quebrada."
+msgstr "IPv6 DNS 正常，但 IPv6 连接中断。"
+
+#: globalPlugins/networkTools.py:0
+msgid "Endereço IPv6 resolvido"
+msgstr "已解析的 IPv6 地址"
+
+#: globalPlugins/networkTools.py:0
+msgid "Executando diagnóstico completo de IPv6, aguarde."
+msgstr "正在执行完整的 IPv6 诊断，请稍候。"
+
+#: globalPlugins/networkTools.py:0
+msgid "IPv6 funcionando."
+msgstr "IPv6 正常。"
+
+#: globalPlugins/networkTools.py:0
+msgid "IPv6 presente, mas sem internet."
+msgstr "IPv6 存在，但没有互联网连接。"
+
+#: globalPlugins/networkTools.py:0
+msgid "Roteador não entrega IPv6."
+msgstr "路由器未提供 IPv6。"
+
+#: globalPlugins/networkTools.py:0
+msgid "Provedor não oferece IPv6."
+msgstr "运营商未提供 IPv6。"
+
+#: globalPlugins/networkTools.py:0
+msgid "Rota padrão IPv6 na rede"
+msgstr "网络中检测到 IPv6 默认路由"
+
+#: globalPlugins/networkTools.py:0
+msgid "sim"
+msgstr "是"
+
+#: globalPlugins/networkTools.py:0
+msgid "não"
+msgstr "否"
+
+#: globalPlugins/networkTools.py:0
+msgid "Conectividade de saída"
+msgstr "出站连接"
+
+#: globalPlugins/networkTools.py:0
+msgid "confirmada"
+msgstr "已确认"
+
+#: globalPlugins/networkTools.py:0
+msgid "Conclusão"
+msgstr "结论"
+
+#: globalPlugins/networkTools.py:0
+msgid "DNS (submenu)"
+msgstr "DNS（子菜单）"
+
+#: globalPlugins/networkTools.py:0
+msgid "Este adaptador já está em modo dinâmico (DHCP)."
+msgstr "此适配器已处于动态模式（DHCP）。"
+
+#: globalPlugins/networkTools.py:0
+msgid "Este adaptador já está configurado com este IP estático."
+msgstr "此适配器已配置为此静态 IP。"
+
+#: globalPlugins/networkTools.py:0
+msgid "Pequeno (mais rápido, menos preciso) - 5 MB download, 2 MB upload"
+msgstr "小（更快，精度较低）- 下载 5 MB，上传 2 MB"
+
+#: globalPlugins/networkTools.py:0
+msgid "Médio, padrão - 25 MB download, 5 MB upload"
+msgstr "中，默认 - 下载 25 MB，上传 5 MB"
+
+#: globalPlugins/networkTools.py:0
+msgid "Número de pacotes (deixe em branco para usar o padrão: {default}):"
+msgstr "数据包数量（留空则使用默认值：{default}）："
+
+#: globalPlugins/networkTools.py:0
+msgid "Limite de saltos (deixe em branco para usar o padrão: {default}):"
+msgstr "跳数上限（留空则使用默认值：{default}）："
+
+#: globalPlugins/networkTools.py:0
+msgid "Interface de rede definida como automática."
+msgstr "网络接口已设置为自动。"
+
+#: globalPlugins/networkTools.py:0
+msgid "Interface de rede definida como {name}."
+msgstr "网络接口已设置为 {name}。"
+
+#: globalPlugins/networkTools.py:0
+msgid "Adaptador"
+msgstr "适配器"
+
+#: networkToolsLib/dialogs.py:0
+msgid "Automático"
+msgstr "自动"
+
+#: networkToolsLib/dialogs.py:0
+msgid "Interface de Rede (Ctrl+Tab para alternar):"
+msgstr "网络接口（按 Ctrl+Tab 切换）："
+
+#: globalPlugins/networkTools.py:0
+msgid "Excelente"
+msgstr "优秀"
+
+#: globalPlugins/networkTools.py:0
+msgid "Estável"
+msgstr "稳定"
+
+#: globalPlugins/networkTools.py:0
+msgid "Instável"
+msgstr "不稳定"
+
+#: globalPlugins/networkTools.py:0
+msgid "não determinado"
+msgstr "未确定"
+
+#: globalPlugins/networkTools.py:0
+msgid "IP de destino"
+msgstr "目标 IP"
+
+#: globalPlugins/networkTools.py:0
+msgid "Pacotes enviados"
+msgstr "已发送数据包"
+
+#: globalPlugins/networkTools.py:0
+msgid "Pacotes recebidos"
+msgstr "已接收数据包"
+
+#: globalPlugins/networkTools.py:0
+msgid "Desvio padrão"
+msgstr "标准差"
+
+#: globalPlugins/networkTools.py:0
+msgid "A interface selecionada ({iface}) não é um adaptador Wi-Fi."
+msgstr "所选接口（{iface}）不是 Wi-Fi 适配器。"
+
+#: globalPlugins/networkTools.py:0
+msgid "motivo desconhecido"
+msgstr "原因未知"
+
+#: globalPlugins/networkTools.py:0
+msgid "Não foi possível medir a velocidade da internet ({detail})."
+msgstr "无法测量网速（{detail}）。"
+
+#: globalPlugins/networkTools.py:0
+msgid "falhou ({detail})"
+msgstr "失败（{detail}）"
+
+#: globalPlugins/networkTools.py:0
+msgid ""
+"A interface selecionada ({iface}) não tem endereço IP configurado no "
+"momento."
+msgstr "所选接口（{iface}）当前没有 IP 配置。"
+
+#: globalPlugins/networkTools.py:0
+msgid "{v} Mbps"
+msgstr "{v} Mbps"
+
+#: globalPlugins/networkTools.py:722
+msgid ""
+"O Windows está bloqueando o acesso às informações de Wi-Fi porque o serviço "
+"de Localização do sistema está desativado. Abra as Configurações, vá em "
+"Privacidade e segurança, Localização, e ative o serviço de Localização. "
+"Depois tente novamente."
+msgstr ""
+"由于系统的定位服务已关闭，Windows 阻止了对 Wi-Fi 信息的访问。请打开设置，进入隐私和安全性，定位，然后开启定位服务。然后再试一次。"
+
+msgid " (e {ip} como secundário)"
+msgstr "（以及 {ip} 作为备用）"
+
+msgid " (em uso agora)"
+msgstr "（当前使用中）"
+
+msgid "&Iniciar o Monitor de Conexão automaticamente com o NVDA"
+msgstr "随 NVDA 自动启动连接监视器(&S)"
+
+msgid "&Não, manter atual"
+msgstr "否，保留当前(&N)"
+
+msgid "&Sim, trocar"
+msgstr "是，切换(&Y)"
+
+msgid "&Tamanho padrão do Teste de Velocidade:"
+msgstr "默认速度测试大小(&D):"
+
+msgid "Aguardando a primeira verificação..."
+msgstr "正在等待首次检查…"
+
+msgid "Aplicando DNS, aguarde."
+msgstr "正在应用 DNS，请稍候。"
+
+msgid "Atenção: conexão de rede perdida."
+msgstr "注意：网络连接已断开。"
+
+msgid ""
+"Atenção: conexão perdida - o roteador também não está respondendo (parece "
+"ser um problema na rede local)."
+msgstr "注意：连接已断开——路由器也没有响应（看起来是本地网络问题）。"
+
+msgid ""
+"Aviso: sem conexão no momento - o roteador também não está respondendo "
+"(parece ser um problema na rede local)."
+msgstr "提示：当前没有连接——路由器也没有响应（看起来是本地网络问题）。"
+
+msgid "Buscar Melhor DNS"
+msgstr "查找最佳 DNS"
+
+msgid "Conectado ({ms} ms de latência do DNS/internet na última verificação)"
+msgstr "已连接(上次检查的 DNS/网络延迟为 {ms} 毫秒)"
+
+msgid "Conectado. Latência média do DNS/internet: {ms} ms."
+msgstr "已连接。DNS/网络平均延迟：{ms} 毫秒。"
+
+msgid "Conexão"
+msgstr "连接"
+
+msgid "Conexão de rede perdida (há {dur})."
+msgstr "网络连接已断开(已 {dur})。"
+
+msgid "Conexão restabelecida após {dur} sem conexão."
+msgstr "在断网 {dur} 后连接已恢复。"
+
+msgid "DNS registrado novamente"
+msgstr "DNS 已重新注册"
+
+msgid ""
+"Deseja definir {ip_melhor} ({provedor}) como seu novo servidor DNS "
+"primário{sec_txt}?"
+msgstr "是否将 {ip_melhor}({provedor})设为新的主 DNS 服务器{sec_txt}?"
+
+msgid "Desligar Monitor de Conexão (está ativo)"
+msgstr "关闭连接监视器(当前已启用)"
+
+msgid "Erro ao aplicar a configuração: {detail}"
+msgstr "应用配置时出错：{detail}"
+
+msgid "Executando, aguarde."
+msgstr "正在执行，请稍候。"
+
+msgid "Fala o estado atual da conexão de internet"
+msgstr "播报当前的网络连接状态"
+
+msgid "I&ntervalo de verificação do Monitor (segundos):"
+msgstr "监视器检查间隔(秒)(&I):"
+
+msgid "Latência média (DNS/internet)"
+msgstr "平均延迟(DNS/网络)"
+
+msgid "Latência mínima / máxima (DNS/internet)"
+msgstr "最小/最大延迟(DNS/网络)"
+
+msgid "Ligar Monitor de Conexão (está desligado)"
+msgstr "开启连接监视器(当前已关闭)"
+
+msgid "Limite padrão de &saltos do Traceroute:"
+msgstr "Traceroute 默认跃点限制(&H):"
+
+msgid "Limpar Cache DNS"
+msgstr "清除 DNS 缓存"
+
+msgid "Limpar Cache DNS (Admin)"
+msgstr "清除 DNS 缓存(管理员)"
+
+msgid "Melhor DNS Aplicado"
+msgstr "已应用最佳 DNS"
+
+msgid "Melhor DNS Encontrado"
+msgstr "已找到最佳 DNS"
+
+msgid "Monitor ativo, ainda aguardando a primeira verificação."
+msgstr "监视器已启用，仍在等待首次检查。"
+
+msgid "Monitor de Conexão"
+msgstr "连接监视器"
+
+msgid "Monitor de Conexão (submenu)"
+msgstr "连接监视器（子菜单）"
+
+msgid ""
+"Nenhum dos servidores DNS testados respondeu. Verifique sua conexão com a "
+"internet."
+msgstr "测试的 DNS 服务器均未响应。请检查您的网络连接。"
+
+msgid "Network Tools"
+msgstr "Network Tools"
+
+msgid "Não foi possível determinar seu DNS atual."
+msgstr "无法确定当前的 DNS。"
+
+msgid "O monitor de conexão está desligado no momento."
+msgstr "连接监视器当前已关闭。"
+
+msgid "O roteador também não está respondendo."
+msgstr "路由器也没有响应。"
+
+msgid "Pilha TCP/IP resetada (reinicie o computador)"
+msgstr "TCP/IP 堆栈已重置(请重启计算机)"
+
+msgid "Pilha Winsock resetada (reinicie o computador)"
+msgstr "Winsock 堆栈已重置(请重启计算机)"
+
+msgid "Quantidade padrão de pacotes do &Ping:"
+msgstr "默认 Ping 数据包数量(&P):"
+
+msgid "Ranking dos servidores testados (mais rápido primeiro):"
+msgstr "测试服务器排名(最快优先):"
+
+msgid "Registrar DNS Novamente"
+msgstr "重新注册 DNS"
+
+msgid "Registrar DNS Novamente (Admin)"
+msgstr "重新注册 DNS(管理员)"
+
+msgid "Renovar IP"
+msgstr "续订 IP"
+
+msgid "Renovar IP (Admin)"
+msgstr "续订 IP(管理员)"
+
+msgid "Reparo Completo"
+msgstr "完整修复"
+
+msgid "Reparo Completo (Admin)"
+msgstr "完整修复(管理员)"
+
+msgid "Reparo e Limpeza DNS"
+msgstr "DNS 修复与清理"
+
+msgid "Reparo e Limpeza DNS (submenu)"
+msgstr "DNS 修复与清理（子菜单）"
+
+msgid "Resetar Pilha TCP/IP"
+msgstr "重置 TCP/IP 堆栈"
+
+msgid "Resetar Pilha TCP/IP (Admin)"
+msgstr "重置 TCP/IP 堆栈(管理员)"
+
+msgid "Resetar Pilha Winsock"
+msgstr "重置 Winsock 堆栈"
+
+msgid "Resetar Pilha Winsock (Admin)"
+msgstr "重置 Winsock 堆栈(管理员)"
+
+msgid "Roteador testado (rede local)"
+msgstr "测试的路由器(本地网络)"
+
+msgid "Sem conexão há {dur}"
+msgstr "已断网 {dur}"
+
+msgid "Servidor testado (internet)"
+msgstr "测试的服务器(网络)"
+
+msgid ""
+"Seu DNS atual ({ip} - {provedor}) já é o mais rápido entre os {n} servidores"
+" testados, com {ms} ms de latência. Nenhuma alteração é necessária."
+msgstr "您当前的 DNS({ip} - {provedor})已经是 {n} 个测试服务器中最快的，延迟为 {ms} 毫秒。无需更改。"
+
+msgid "Seu DNS atual ({ip}) não respondeu dentro do tempo limite."
+msgstr "您当前的 DNS({ip})未在限定时间内响应。"
+
+msgid "Seu DNS atual é {ip} ({ms} ms)."
+msgstr "您当前的 DNS 为 {ip}({ms} 毫秒)。"
+
+msgid "Status do Monitor de Conexão"
+msgstr "连接监视器状态"
+
+msgid "Tempo limite por servidor na Busca de Melhor &DNS (segundos):"
+msgstr "最佳 DNS 查找的单服务器超时(秒)(&T):"
+
+msgid "Tempo total sem conexão"
+msgstr "总断网时长"
+
+msgid "Ver Status do Monitor"
+msgstr "查看监视器状态"
+
+msgid "Verificações realizadas"
+msgstr "已执行的检查次数"
+
+msgid "ainda não verificou"
+msgstr "尚未检查"
+
+msgid "desconhecido"
+msgstr "未知"
+
+msgid "há {dur}"
+msgstr "{dur}前"
+
+msgid "não definido"
+msgstr "未设置"
+
+msgid "o roteador também não está respondendo (problema na rede local)"
+msgstr "路由器也没有响应（本地网络问题）"
+
+msgid "roteador não detectado"
+msgstr "未检测到路由器"
+
+msgid "sem dados ainda"
+msgstr "暂无数据"
+
+msgid "{h} h"
+msgstr "{h} 小时"
+
+msgid "{h} h {m} min"
+msgstr "{h} 小时 {m} 分"
+
+msgid "{min} ms / {max} ms"
+msgstr "{min} 毫秒 / {max} 毫秒"
+
+msgid "{m} min"
+msgstr "{m} 分"
+
+msgid "{m} min {s} s"
+msgstr "{m} 分 {s} 秒"
+
+msgid "{pct}%"
+msgstr "{pct}%"
+
+msgid "{s} s"
+msgstr "{s} 秒"
+
+msgid "Última verificação"
+msgstr "上次检查"
+
+msgid "✔ Aplicado com sucesso"
+msgstr "✔ 应用成功"
+
+msgid "Jitter (DNS/internet)"
+msgstr "抖动(DNS/网络)"
+
+msgid "{j} ms (desvio padrão: {std} ms)"
+msgstr "{j} 毫秒(标准差:{std} 毫秒)"
+
+msgid "Bytes recebidos"
+msgstr "已接收字节数"
+
+msgid "Diagnóstico Avançado do Adaptador"
+msgstr "适配器高级诊断"
+
+msgid "Métrica de rota"
+msgstr "路由跃点数"
+
+msgid "Pacotes enviados com erro"
+msgstr "发送错误的数据包"
+
+msgid "MTU"
+msgstr "MTU"
+
+msgid "Pacotes recebidos com erro"
+msgstr "接收错误的数据包"
+
+msgid "Bytes enviados"
+msgstr "已发送字节数"
+
+msgid "Pacotes enviados descartados"
+msgstr "已丢弃的发送数据包"
+
+msgid "não disponível"
+msgstr "不可用"
+
+msgid ""
+"Consultando diagnóstico avançado via PowerShell, aguarde (pode levar alguns "
+"segundos na primeira vez)."
+msgstr "正在通过 PowerShell 查询高级诊断，请稍候(首次可能需要几秒钟)。"
+
+msgid "Estado da conexão"
+msgstr "连接状态"
+
+msgid ""
+"Não foi possível obter o diagnóstico avançado. O PowerShell pode não estar "
+"disponível neste computador (às vezes bloqueado por política do sistema) ou "
+"a consulta falhou. O restante do Network Tools continua funcionando "
+"normalmente sem ele."
+msgstr ""
+"无法获取高级诊断。此计算机上可能没有 PowerShell(有时会被系统策略阻止)，或查询失败。Network Tools "
+"的其余功能在没有它的情况下仍可正常运行。"
+
+msgid "Descrição do adaptador"
+msgstr "适配器描述"
+
+msgid "Pacotes recebidos descartados"
+msgstr "已丢弃的接收数据包"
+
+msgid "Diagnóstico Avançado do Adaptador (PowerShell)"
+msgstr "适配器高级诊断(PowerShell)"
+
+msgid "Ping TCP - {host}:{porta}"
+msgstr "TCP Ping - {host}:{porta}"
+
+msgid "Porta TCP (opcional - deixe em branco para ping ICMP normal):"
+msgstr "TCP 端口(可选——留空则为正常 ICMP ping)："
+
+msgid ""
+"Porta inválida - use um número entre 1 e 65535, ou deixe o campo em branco "
+"para ping ICMP normal."
+msgstr "端口无效——请使用 1 到 65535 之间的数字，或留空以进行正常的 ICMP ping。"
+
+msgid "Sem resposta de {host} na porta {porta}."
+msgstr "{host} 在端口 {porta} 上无响应。"
+
+msgid "Testando porta TCP {porta} de {host}, aguarde."
+msgstr "正在测试 {host} 的 TCP 端口 {porta}，请稍候。"
+
+msgid ""
+"Conectado. Latência média de {iface}: {gw} ms. Latência média do "
+"DNS/internet: {dns} ms."
+msgstr "已连接。{iface} 平均延迟：{gw} 毫秒。DNS/网络平均延迟：{dns} 毫秒。"
+
+msgid "Jitter ({iface})"
+msgstr "抖动({iface})"
+
+msgid "Latência média ({iface} - roteador)"
+msgstr "平均延迟({iface} - 路由器)"
+
+msgid "Latência mínima / máxima ({iface})"
+msgstr "最小/最大延迟({iface})"
+
+msgid "adaptador de rede"
+msgstr "网络适配器"
+
+msgid ""
+"Apesar da velocidade medida ser boa, sua conexão parece instável ({motivos})"
+" - isso pode causar travamentos em chamadas de voz/vídeo e jogos online, "
+"mesmo com download/upload rápidos."
+msgstr "尽管测得的速度良好，您的连接似乎不稳定({motivos})——即使下载/上传速度快，这也可能导致语音/视频通话和在线游戏卡顿。"
+
+msgid "Datacenter do teste"
+msgstr "测试数据中心"
+
+msgid "Diagnóstico"
+msgstr "诊断"
+
+msgid "IP público usado no teste"
+msgstr "测试中使用的公网 IP"
+
+msgid "Perda de pacotes (20 pacotes para {host})"
+msgstr "丢包率(向 {host} 发送 20 个数据包)"
+
+msgid "jitter de {j} ms"
+msgstr "抖动 {j} 毫秒"
+
+msgid "não foi possível medir"
+msgstr "无法测量"
+
+msgid "perda de pacotes de {pct}%"
+msgstr "丢包率 {pct}%"
+
+msgid "Metadados do Cloudflare"
+msgstr "Cloudflare 元数据"
+
+msgid "não disponíveis ({detail})"
+msgstr "不可用({detail})"
+
+msgid "Atualizar Base de Fabricantes Completa"
+msgstr "更新完整制造商数据库"
+
+msgid "Não foi possível baixar a base de fabricantes ({erro})."
+msgstr "无法下载制造商数据库({erro})。"
+
+msgid "Varredura de Dispositivos (submenu)"
+msgstr "设备扫描（子菜单）"
+
+msgid "Ainda não existe nenhuma base local baixada."
+msgstr "尚未下载任何本地数据库。"
+
+msgid "Já existe uma base local, baixada em {data}, com {n} fabricantes."
+msgstr "已存在本地数据库，下载于 {data}，包含 {n} 家制造商。"
+
+msgid ""
+"Base de fabricantes atualizada com sucesso - {n} fabricantes disponíveis. A "
+"Varredura de Dispositivos já vai usar ela a partir de agora."
+msgstr "制造商数据库更新成功——可用 {n} 家制造商。设备扫描现在将自动使用它。"
+
+msgid ""
+"A base de fabricantes já estava atualizada - não foi necessário baixar de "
+"novo."
+msgstr "制造商数据库已经是最新的——无需再次下载。"
+
+msgid "Verificando base de fabricantes, aguarde."
+msgstr "正在检查制造商数据库，请稍候。"
+
+msgid ""
+"Grande, mais preciso em conexões rápidas - 200 MB download, 80 MB upload (4 "
+"conexões paralelas)"
+msgstr "大——在高速连接上更精确 - 200 MB 下载，80 MB 上传(4 个并行连接)"
+
+msgid ", jitter {j} ms, perda {p}%"
+msgstr "，抖动 {j} 毫秒，丢包 {p}%"
+
+msgid "Conexões paralelas no preset &Grande do Teste de Velocidade:"
+msgstr "速度测试\"大\"预设中的并行连接数(&G)："
+
+msgid "Consultas por servidor na Busca de Melhor D&NS (estabilidade):"
+msgstr "查找最佳 DNS 时每台服务器的查询次数(稳定性)(&N)："
+
+msgid ""
+"Seu DNS atual ({ip} - {provedor}) já é o mais rápido e estável entre os {n} "
+"servidores testados, com {ms} ms de latência e {j} ms de jitter. Nenhuma "
+"alteração é necessária."
+msgstr ""
+"您当前的 DNS({ip} - {provedor})在测试的 {n} 台服务器中已经是最快最稳定的，延迟为 {ms} 毫秒，抖动为 {j} "
+"毫秒。无需更改。"
+
+msgid "Conexões paralelas usadas"
+msgstr "使用的并行连接数"
+
+msgid "Dados solicitados no teste (download / upload)"
+msgstr "测试中请求的数据量(下载/上传)"
+
+msgid "{down} MB / {up} MB"
+msgstr "{down} MB / {up} MB"
+
+msgid ""
+"A regra \"{nome}\" ({direcao}) não foi criada pelo Network Tools - removê-la"
+" pode afetar outro programa ou uma exceção do sistema. Continuar mesmo "
+"assim?"
+msgstr "规则 \"{nome}\"({direcao})不是由 Network Tools 创建的——删除它可能影响其他程序或系统例外。仍要继续吗？"
+
+msgid ""
+"DNS {ip} não respondeu pela porta 53 (provável bloqueio do roteador ou "
+"provedor). Ativar Modo Seguro (DNS via HTTPS, porta 443)?"
+msgstr "DNS {ip} 未在端口 53 上响应(可能被路由器或运营商阻止)。是否启用安全模式(通过 HTTPS 的 DNS，端口 443)？"
+
+msgid ""
+"Permite conexões de ENTRADA em {alvo}, vindas de {escopo}, até remover a "
+"regra depois. Continuar?"
+msgstr "允许来自 {escopo} 的入站连接到 {alvo}，直到之后删除该规则。是否继续？"
+
+msgid ""
+"Reseta a pilha de sockets do Windows - exige reiniciar o computador. "
+"Continuar?"
+msgstr "重置 Windows 套接字堆栈——需要重启计算机。是否继续？"
+
+msgid ""
+"Reseta toda a configuração TCP/IP para os padrões de fábrica - exige "
+"reiniciar o computador. Continuar?"
+msgstr "将整个 TCP/IP 配置重置为出厂默认值——需要重启计算机。是否继续？"
+
+msgid ""
+"Vai verificar se há uma versão mais nova da base da IEEE (~3 MB) e baixar só"
+" se houver mudança. Precisa de internet. Continuar?"
+msgstr "将检查是否有更新版本的 IEEE 数据库(约 3 MB)，仅在发生变化时才下载。需要联网。是否继续？"
+
+msgid "Endereço ou host inválido: {host}"
+msgstr "地址或主机无效：{host}"
+
+msgid "&Salvar"
+msgstr "保存(&S)"
+
+msgid "\"{ip}\" não é um endereço IPv4 válido."
+msgstr "\"{ip}\" 不是有效的 IPv4 地址。"
+
+msgid "Não foi possível salvar a lista."
+msgstr "无法保存列表。"
+
+msgid "\"{ip}\" está duplicado - apareceu mais de uma vez na lista."
+msgstr "\"{ip}\" 重复——它在列表中出现了不止一次。"
+
+msgid ""
+"Buscando o DNS mais rápido e estável entre os servidores da sua lista ({n} "
+"consultas por servidor), aguarde."
+msgstr "正在您列表中的服务器中查找最快最稳定的 DNS(每台服务器 {n} 次查询)，请稍候。"
+
+msgid "Endereço IPv4 do servidor DNS:"
+msgstr "DNS 服务器 IPv4 地址："
+
+msgid "Endereço IPv4 inválido: {ip}"
+msgstr "无效的 IPv4 地址：{ip}"
+
+msgid "Gerenciar Servidores DNS"
+msgstr "管理 DNS 服务器"
+
+msgid "Jitter: {j} ms"
+msgstr "抖动：{j} 毫秒"
+
+msgid "Latência média: {ms} ms"
+msgstr "平均延迟：{ms} 毫秒"
+
+msgid "Lista salva - {n} servidor(es) DNS."
+msgstr "列表已保存——{n} 个 DNS 服务器。"
+
+msgid ""
+"Lista salva vazia - a Busca de Melhor DNS não vai ter nenhum servidor para "
+"testar até que você adicione algum aqui."
+msgstr "已保存空列表——在您在此处添加服务器之前，\"查找最佳 DNS\"将没有任何服务器可测试。"
+
+msgid "Máxima: {ms} ms"
+msgstr "最大值：{ms} 毫秒"
+
+msgid "Mínima: {ms} ms"
+msgstr "最小值：{ms} 毫秒"
+
+msgid "Perda: {p}% ({recv} de {sent} consultas responderam)"
+msgstr "丢失：{p}%({recv}/{sent} 次查询有响应)"
+
+msgid "Quantidade de servidores no &ranking da Busca de Melhor DNS:"
+msgstr "\"查找最佳 DNS\"排名中的服务器数量(&R)："
+
+msgid "Servidor: {ip}{provedor}"
+msgstr "服务器：{ip}{provedor}"
+
+msgid ""
+"Sua lista de servidores DNS está vazia. Adicione ao menos um em \"Gerenciar "
+"Servidores DNS\" antes de buscar o melhor."
+msgstr "您的 DNS 服务器列表为空。请先在\"管理 DNS 服务器\"中添加至少一个，然后再查找最佳服务器。"
+
+msgid "Testando {ip}, aguarde."
+msgstr "正在测试 {ip}，请稍候。"
+
+msgid "Testar um Servidor DNS"
+msgstr "测试 DNS 服务器"
+
+msgid "Teste de Servidor DNS"
+msgstr "DNS 服务器测试"
+
+msgid ""
+"Um endereço IPv4 por linha - inclui os servidores padrão e os que você já "
+"adicionou. Edite, adicione ou remova livremente (inclusive os padrão). Esses"
+" são os servidores testados na próxima Busca de Melhor DNS. Deixe em branco "
+"para não ter nenhum."
+msgstr ""
+"每行一个 IPv4 地址——包括默认服务器和您已添加的服务器。可自由编辑、添加或删除(包括默认服务器)。这些是下次\"查找最佳 "
+"DNS\"时测试的服务器。留空则不使用任何服务器。"
+
+msgid "{ip} não respondeu a nenhuma das {n} consultas."
+msgstr "{ip} 未响应 {n} 次查询中的任何一次。"
+
+msgid "Consultas no &Teste de um Servidor DNS avulso:"
+msgstr "单个 DNS 服务器测试的查询次数(&T)："
+
+msgid "Tempo limite no Teste de um Servidor DNS a&vulso (segundos):"
+msgstr "单个 DNS 服务器测试的超时时间(秒)(&S)："
+
+msgid ""
+"Protocolo - digite 4 para IPv4, 6 para IPv6, ou deixe em branco para "
+"automático:"
+msgstr "协议——输入 4 表示 IPv4，输入 6 表示 IPv6，留空则自动选择："
+
+msgid "Disponibilidade nesta rede"
+msgstr "此网络的可用性"
+
+msgid "Ethernet ({iface}, roteador {mac})"
+msgstr "以太网({iface}，路由器 {mac})"
+
+msgid ""
+"Monitor ativo (ligado há {dur} no total). {n} rede(s) visitada(s) nesta "
+"sessão."
+msgstr "监控已启用(总共开启 {dur})。本次会话访问了 {n} 个网络。"
+
+msgid "Monitorando esta rede há"
+msgstr "监控此网络已持续"
+
+msgid "Quedas nesta rede"
+msgstr "此网络的断线次数"
+
+msgid "Rede alterada - agora monitorando {rede} ({target})."
+msgstr "网络已更改——现在正在监控 {rede}({target})。"
+
+msgid "rede desconhecida"
+msgstr "未知网络"
+
+msgid "{rede} (atual)"
+msgstr "{rede}(当前)"
